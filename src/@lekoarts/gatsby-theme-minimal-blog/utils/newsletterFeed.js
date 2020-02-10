@@ -40,7 +40,7 @@ module.exports = {
         }
       `,
       output: `rss.xml`,
-      title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+      title: `carlosazaustre.es - Formación y Desarrollo en JavaScript`,
     },
   ],
 }

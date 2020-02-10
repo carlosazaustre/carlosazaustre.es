@@ -24,7 +24,7 @@ const Layout = ({ children, className }: LayoutProps) => (
           textRendering: `optimizeLegibility`,
         },
         "::selection": {
-          backgroundColor: `primary`,
+          backgroundColor: `secondary`,
           color: `white`,
         },
         a: {

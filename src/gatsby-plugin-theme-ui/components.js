@@ -2,8 +2,8 @@
 import React from "react"
 import { preToCodeBlock } from "mdx-utils"
 import { Text } from "@theme-ui/components"
-import Code from "../components/code"
-import Title from "../components/title"
+import Code from "../@lekoarts/gatsby-theme-minimal-blog/components/code"
+import Title from "../@lekoarts/gatsby-theme-minimal-blog/components/title"
 
 export default {
   Text: ({ children, ...props }) => <Text {...props}>{children}</Text>,
