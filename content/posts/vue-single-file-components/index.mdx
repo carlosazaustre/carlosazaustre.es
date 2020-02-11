@@ -8,6 +8,8 @@ Con Vue podemos crear componentes de múltiples formas, la más sencilla es cóm
 
 Sin embargo esa forma, aunque es la más sencilla y práctica, no es la más escalable, ya que nos obliga a escribir el HTML dentro del método `Vue.component()` o a utilizar múltiples `<templates>` en el HTML.
 
+`youtube:b0ozkpDiplU`
+
 Para solventar esto, existe una solución que junto con Webpack y un módulo (`vue-loader`) nos permite tener en un único fichero la vista (template), el diseño (css) y la lógica (javascript). Estos ficheros tienen una extensión `.vue` y tienen la siguiente forma:
 
 ```html
@@ -24,7 +26,6 @@ Para solventar esto, existe una solución que junto con Webpack y un módulo (`v
 </style>
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b0ozkpDiplU" frameborder="0" allowfullscreen></iframe>
 
 Lo bueno de éste fichero, es que al no ser un fichero final de producción, es un fichero de desarrollo que luego Webpack interpreta y extrae las diferentes partes a sus ficheros correspondientes, nos da mucha versatilidad, por ejemplo:
 
