@@ -38,7 +38,7 @@ const shadow = px.map(v => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`)
 
 const Post = ({ data: { post } }: PostProps) => {
   let disqusConfig = {
-    url: `${process.env.SITE_URL + post.slug}`,
+    url: `https://carlosazaustre.es${ post.slug}`,
     identifier: post.id,
     title: post.title
   };
