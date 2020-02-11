@@ -3,12 +3,16 @@ title: "Vue: Single File Components"
 slug: "/vue-single-file-components"
 date: 2018-10-10
 banner: "./single-file-components-vue.png"
+tags:
+  - "💻 Desarrollo"
 ---
+import YouTube from "../../../src/components/youtube"
+
 Con Vue podemos crear componentes de múltiples formas, la más sencilla es cómo vismo en un post anterior donde utilizamos el método `Vue.component()`.
 
 Sin embargo esa forma, aunque es la más sencilla y práctica, no es la más escalable, ya que nos obliga a escribir el HTML dentro del método `Vue.component()` o a utilizar múltiples `<templates>` en el HTML.
 
-`youtube:b0ozkpDiplU`
+<YouTube videoId="b0ozkpDiplU" />
 
 Para solventar esto, existe una solución que junto con Webpack y un módulo (`vue-loader`) nos permite tener en un único fichero la vista (template), el diseño (css) y la lógica (javascript). Estos ficheros tienen una extensión `.vue` y tienen la siguiente forma:
 
