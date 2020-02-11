@@ -26,6 +26,8 @@
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sitemap": "^2.2.19",
     "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-remark-embedder": "^1.11.2",
+    "gatsby-transformer-remark": "^2.6.50",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
