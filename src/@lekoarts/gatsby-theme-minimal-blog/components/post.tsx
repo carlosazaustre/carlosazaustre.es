@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
+import { Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 import React from "react"
@@ -42,6 +43,7 @@ const Post = ({ data: { post } }: PostProps) => {
     identifier: post.id,
     title: post.title
   };
+
   return (
     <Layout>
       <SEO
@@ -69,7 +71,9 @@ const Post = ({ data: { post } }: PostProps) => {
         <span>{post.timeToRead} min read</span>
         {` — `}
         <span>
-          <CommentCount config={disqusConfig} placeholder={"..."} />
+        <Link to={post.slug + `#disqus_thread`}>
+          <CommentCount config={disqusConfig} placeholder={`Comments`} />
+        </Link>
         </span>
       </p>
       <section

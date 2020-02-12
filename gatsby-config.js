@@ -80,12 +80,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `carlosazaustre.es - Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
+        name: `carlosazaustre.es`,
         short_name: `carlosazaustre.es`,
         description: `Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase.`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#ffc400`,
+        background_color: `#FCCB0B`,
+        theme_color: `#FCCB0B`,
         display: `standalone`,
         icons: [
           {
