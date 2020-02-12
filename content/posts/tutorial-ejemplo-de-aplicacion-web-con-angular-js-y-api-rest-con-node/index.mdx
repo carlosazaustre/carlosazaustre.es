@@ -5,9 +5,9 @@ date: 2014-01-13
 tags:
     - "💻 Desarrollo"
 ---
-[AngularJS](/empezando-con-angular-js) es uno de los frameworks más populares para desarrollar aplicaciones del lado cliente (Frontend) con JavaScript.</p>
+[AngularJS](/empezando-con-angular-js) es uno de los frameworks más populares para desarrollar aplicaciones del lado cliente (Frontend) con JavaScript.
 
-Éste tutorial, <a href="https://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular">basado en éste otro de Scotch.io</a> nos sirve para empezar a desarrollar profesionalmente con AngularJS.</p>
+Éste tutorial, [basado en éste otro de Scotch.io](https://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular) nos sirve para empezar a desarrollar profesionalmente con AngularJS.
 
 Vamos a ver como crear una [*Single Page Application*](//en.wikipedia.org/wiki/Single-page_application), y como conectarla a una [API REST construida con NodeJS](/como-crear-una-api-rest-usando-node-js/) y Mongo como base de datos. Completando así el Stack tecnológico conocido como, [MEAN](http://mean.io).
 
@@ -103,7 +103,11 @@ var Todo = mongoose.model('Todo', {
 
 Tras esto nos queda construir las rutas que llamarán a nuestro API y que utilizaremos desde el frontend. En esta tabla se muestran las 3 llamadas que vamos a implementar y que definirán nuestra API:
 
-<div class="well"><table><tbody><tr><th>HTTP</th><th>URL</th><th>Descripción</th></tr><tr><td>GET</td><td>/api/todos</td><td>Devuelve todas las tareas de la BD</td></tr><tr><td>POST</td><td>/api/todos</td><td>Crea una tarea</td></tr><tr><td>DELETE</td><td>/api/todos/:todo</td><td>Borra una tarea</td></tr></tbody></table></div>
+| HTTP | URL | Descripción |
+|--|--|--|
+| GET | `/api/todos` | Devuelve todas las tareas de la BD |
+| POST | `/api/todos` | Crea una tarea |
+| DELETE | `/api/todos/:todo` | Borra una tarea |
 
 Veamos las rutas. Estas irán también en el archivo 	`server.js`, justo antes de cuando se inicia el servidor y escucha en el puerto con `app.listen`
 
