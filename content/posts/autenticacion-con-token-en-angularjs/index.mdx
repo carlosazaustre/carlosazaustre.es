@@ -21,7 +21,7 @@ $ bower install --save satellizer
 ```
 De seguido, en nuestro fichero principal de Angular, supongamos el `app.js`, importamos el módulo y configuramos la librería. El nombre de la directiva que utiliza *Satellizer* es `$auth` y `$authProvider`.
 
-```language-javascript
+```javascript
 angular
 	.module("myApp", ["satellizer"])
     .config(function($authProvider) {
@@ -40,7 +40,7 @@ En `$authProvider.tokenName` le indicamos un nombre al token y `$authProvider.to
 
 Lo siguiente a implementar son los controladores. Tendremos dos principalmente, el de login y el de registro, además del de logout.
 
-```language-javascript
+```javascript
 angular
 	.module("myApp.controllers")
     .controller("SignUpController", SignUpController)
@@ -103,7 +103,7 @@ Entre todos los módulos que están programados en *Satellizer*, vemos uno llama
 
 `shared.getToken()` busca en nuestro LocalStorage la clave que hemos definido para almacenar nuestro Token y nos lo devuelve
 
-```language-javascript
+```javascript
 shared.getToken = function() {
           var tokenName = config.tokenPrefix ? config.tokenPrefix + '_' + config.tokenName : config.tokenName;
           return $window.localStorage[tokenName];
@@ -112,7 +112,7 @@ shared.getToken = function() {
 
 `shared.getPayload()` toman el token y devuelve el `payload` que es la 2a parte del token
 
-```language-javascript
+```javascript
 shared.getPayload = function() {
           var tokenName = config.tokenPrefix ? config.tokenPrefix + '_' + config.tokenName : config.tokenName;
           var token = $window.localStorage[tokenName];
@@ -127,7 +127,7 @@ shared.getPayload = function() {
 
 Y por último la función `shared.setToken()`, almacena el token recibido en el LocalStorage:
 
-```language-javascript
+```javascript
 shared.setToken = function(response, isLinking) {
           var token = (response.access_token) || (config.tokenRoot && response.data[config.tokenRoot] ?
             response.data[config.tokenRoot][config.tokenName] : response.data[config.tokenName]);
@@ -149,7 +149,7 @@ shared.setToken = function(response, isLinking) {
 ##### ¿Cómo se envía el token en cada petición HTTP?
 De eso se encarga la directiva `$httpProvider` que funciona como interceptor o middleware y se activa en cada petición HTTP.
 
-```language-javascript
+```javascript
 //...
 .config(['$httpProvider', 'satellizer.config', function($httpProvider, config) {
       $httpProvider.interceptors.push(['$q', function($q) {
@@ -176,13 +176,13 @@ De esta manera, en cada petición HTTP, se inserta en las cabeceras el token si 
 #### Rutas y vistas
 Volvemos al módulo principal de nuestra aplicación y añadimos las rutas del frontend a continuación de la configuración del `$authProvider` podemos usar `ngRoute` o `ui.route` si queremos tener estados en lugar de rutas y poder tener vistas anidadas (*nested views*). Yo suelo utilizar `ui.router` me parece más cómodo. Para ello primero instalamos la librería correspondiente:
 
-```javascript
+```sh
 $ bower install --save angular-ui-router
 ```
 
 Y lo configuramos en `app.js`
 
-```language-javascript
+```javascript
 angular
 	.module("myApp", ["satellizer", "ui.router"])
     .config(function($authProvider, $stateProvider) {
@@ -229,7 +229,7 @@ En este código he configurado dos rutas adicionales, la de `Home` en `/` y la d
 
 Lo que si voy a mostrar es como serían las vistas para el `login` y el `signup`.
 
-```markup
+```html
 <!-- views/signup.html -->
 <form ng-submit="signup.signup()" method="post">
 	<input type="email" ng-model="signup.email"/>
@@ -238,7 +238,7 @@ Lo que si voy a mostrar es como serían las vistas para el `login` y el `signup`
 </form>
 ```
 
-```markup
+```html
 <!-- views/login.html -->
 <form ng-submit="login.login()" method="post">
 	<input type="email" ng-model="login.email"/>

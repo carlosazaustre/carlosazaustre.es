@@ -13,11 +13,11 @@ Voy a separar las funciones en varios archivos, siguiendo buenas prácticas y mo
 
 Lo primero es crear el archivo `server.js` dónde configuramos Express (en versión 4), importamos los módulos necesarios y hacemos correr el servidor y la base de datos. 
 
-Si te pierdes un poco, en [éste post anterior expliqué como crear un API REST en Node.js con Express y MongoDB](/como-implementar-una-api-rest-con-mongodb-node-js-usando-express-v4/). Y si prefieres también tengo un [videotutorial en YouTube sobre el tema](https://www.youtube.com/watch?v=SKoK6braZlk&list=PLUdlARNXMVkl9MJl4r90Z1j1nmAfWEPV3).
+Si te pierdes un poco, en [éste post anterior expliqué como crear un API REST en Node.js con Express y MongoDB](/como-crear-una-api-rest-usando-node-js/). Y si prefieres también tengo un [videotutorial en YouTube sobre el tema](https://www.youtube.com/watch?v=SKoK6braZlk&list=PLUdlARNXMVkl9MJl4r90Z1j1nmAfWEPV3).
 
 Configuración básica de un servidor en Node.js utilizando Express v4.
 
-```language-javascript
+```javascript
 // server.js
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -67,7 +67,7 @@ De igual manera, en las funciones controladores de `/auth/signup` y `/auth/login
 
 En el fichero `auth.js` voy a definir las dos funciones controladoras para el registro y autenticación de usuarios.
 
-```language-javascript
+```javascript
 // auth.js
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
@@ -110,7 +110,7 @@ Ahora vamos al "meollo" de este artículo, la creación de un Token que identifi
 Para codificar el token utilizamos una clave secreta. Es importante que esta clave permanezca lo más oculta posible. Una opción es almacenarla en un fichero `config.js` y ese fichero no subirlo al repositorio con `.gitignore` o la opción mejor es utilizar una variable de entorno (con `process.env`) que esté en nuestro servidor, y otra para nuestro entorno de desarrollo.
 
 Sería algo así:
-```language-javascript
+```javascript
 // config.js
 module.exports = {
   TOKEN_SECRET: process.env.TOKEN_SECRET || "tokenultrasecreto"
@@ -121,7 +121,7 @@ Cuando importemos el fichero `config.js` en la variable `TOKEN_SECRET` tendremos
 
 Creamos el servicio que utilizaremos para codificar el token. Para ello vamos utilizar la librería [jwt-simple](https://www.npmjs.com/package/jwt-simple) que nos facilita la vida a la hora de codificar el *payload* y hace todo el trabajo que expliqué en el [post anterior](/que-es-la-autenticacion-con-token/).
 
-```language-javascript
+```javascript
 // services.js
 var jwt = require('jwt-simple');
 var moment = require('moment');
@@ -179,13 +179,13 @@ Lo primero que hacemos en la función es comprobar que la petición, `req` lleva
 Si la petición no envía una autorización, envíamos el código de error `403` de acesso denegado. y si no, tomamos el token.
 
 la cabecera, tendrá una pinta parecida a ésta:
-```
+```js
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbsciOiJIUzI1NiJ9.eyJzdWIiOiIWeRtU2ZWMyYjUyNjgxNzE2YmXiNzAxMzIiLCJpYXQiOjE0Mj10MjA0OTEsImV4cCI6MTQy67YzMDA5MX0.IH7ek7Rp_WQJvXeOd8zrBIpeFi4W6kUi_6htmaxv7Ow
 ```
 
 Sólo tenemos que obtener el token de ese String y lo hacemos con el método `split` de JavaScript:
 
-```
+```js
 var token = req.headers.authorization.split(" ")[1];
 ```
 
