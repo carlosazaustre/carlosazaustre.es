@@ -33,14 +33,16 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       <Title text="📝Artículos recientes">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Leer todos los artículos</Link>
+        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
+          Leer todos los artículos
+        </Link>
       </Title>
       <Listing posts={posts} showTags={false} />
       <List>
         <Bottom />
       </List>
     </Layout>
-  )
+  );
 }
 
 export default Homepage
