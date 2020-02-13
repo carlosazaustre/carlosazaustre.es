@@ -13,15 +13,68 @@
     },
     {
       "source": "/ir/digitalocean",
-      "destination": "https://www.digitalocean.com/?refcode=f716de9860aa"
+      "destination": "https://www.digitalocean.com/?refcode=f716de9860aa",
+      "type": 301
     },
     {
       "source": "/ebook-angular",
-      "destination": "https://leanpub.com/ebookAngular"
+      "destination": "https://leanpub.com/ebookAngular",
+      "type": 301
     },
     {
       "source": "/blog/ebook-angular",
-      "destination": "https://leanpub.com/ebookAngular"
+      "destination": "https://leanpub.com/ebookAngular",
+      "type": 301
+    },
+    {
+      "source": "/ebook-aprendiendo-javascript",
+      "destination": "https://leanpub.com/aprendiendo-javascript",
+      "type": 301
+    },
+    {
+      "source": "/construyendo-un-api-rest-con-io-js-y-ecmascript-6",
+      "destination": "/como-crear-una-api-rest-usando-node-js",
+      "type": 301
+    },
+    {
+      "source": "/author/carlos/",
+      "destination": "/about",
+      "type": 301
+    },
+    {
+      "source": "/angularcamp/",
+      "destination": "/",
+      "type": 301
+    },
+    {
+      "source": "/2014/",
+      "destination": "/blog",
+      "type": 301
+    },
+    {
+      "source": "/2015/",
+      "destination": "/blog",
+      "type": 301
+    },
+    {
+      "source": "/2016/",
+      "destination": "/blog",
+      "type": 301
+    },
+    {
+      "source": "/2017/",
+      "destination": "/blog",
+      "type": 301
+    },
+    {
+      "source": "/2018/",
+      "destination": "/blog",
+      "type": 301
+    },
+    {
+      "source": "/2019/",
+      "destination": "/blog",
+      "type": 301
     }
   ]
   }
