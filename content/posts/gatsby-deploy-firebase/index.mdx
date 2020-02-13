@@ -34,7 +34,7 @@ Vamos a utilizar la funcionalidad de Hosting de Firebase, que actúa como un CDN
 
 Para ello nos dirigimos a la [consola de Firebase](https://console.firebase.google.com) y con nuestra cuenta de Google creamos un nuevo proyecto. Ponle un nombre, elige tu región y ya tienes tu hosting listo para deplegar contenido.
 
-![Firebase console crear proyecto]('./gatsby-firebase-console.png')
+![Firebase console crear proyecto](./gatsby-firebase-console.png)
 
 Ahora ve a tu terminal de tu equipo instala las Firebase Tools:
 
@@ -135,15 +135,15 @@ Allí enlaza con tu cuenta de GitHub y entre tus repositorios, busca el que acab
 
 En mi caso, mi [url es ésta](https://travis-ci.org/carlosazaustre/carlosazaustre.es). Tendrás que activar el repositorio para habilitar travis en él.
 
-![activar travis en tu repositorio]('./gatsby-travis.png')
+![activar travis en tu repositorio](./gatsby-travis.png)
 
 Seguidamente ve al menú de opciones y elige `settings`:
 
-![opciones de travis]('./gatsby-travis-options.png')
+![opciones de travis](./gatsby-travis-options.png)
 
 Aquí vamos a configurar las variables de entorno que usemos en nuestro código, de manera que no queden en el repositorio público a la vista. Una de ellas es el token de Firebase.
 
-![Variables de entorno en Gatsby]('./gatsby-env.png')
+![Variables de entorno en Gatsby](./gatsby-env.png)
 
 Para conseguir el token de Firebase podemos hacerlo por linea de comandos con la siguiente instrucción.
 
@@ -164,7 +164,7 @@ Example: firebase deploy --token "$FIREBASE_TOKEN"
 
 El texto que te aparezca del tipo `1//9d85ngk5UNXCkdjdur7bdNwF-L9Irud01Ji3UVC-e7oYNXcp_QGh0yx5ClsWZ8b98hypoaz-8475734_djd` es tu Token, y es el que vamos a guardar en la configuración del dashboard de Travis.
 
-![configura tokens como variables de entorno en travis]('./gatsby-env-firebase-token.png')
+![configura tokens como variables de entorno en travis](./gatsby-env-firebase-token.png)
 
 Ahora ya tenemos Travis listo, sólo nos queda decirle que tiene que hacer :)
 
