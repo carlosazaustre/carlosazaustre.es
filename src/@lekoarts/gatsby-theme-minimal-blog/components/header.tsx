@@ -7,7 +7,8 @@ import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import ColorModeToggle from "./colormode-toggle"
 import Navigation from "./navigation"
 import replaceSlashes from "../utils/replaceSlashes"
-import logo from "../../../../static/favicon-32x32.png"
+import logo from "../../../../static/android-icon-36x36.png"
+import TwitterFollowBtn from "../../../components/twitter-follow-button"
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata()
@@ -48,6 +49,7 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
+        <TwitterFollowBtn username="carlosazaustre" />
         {externalLinks && externalLinks.length > 0 && (
           <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
             {externalLinks.map(link => (

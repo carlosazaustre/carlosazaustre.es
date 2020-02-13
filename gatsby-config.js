@@ -39,10 +39,6 @@ module.exports = {
             url: "https://github.com/carlosazaustre"
           },
           {
-            name: `Twitter`,
-            url: `https://twitter.com/carlosazaustre`
-          },
-          {
             name: "YouTube",
             url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1"
           },
