@@ -48,6 +48,7 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
+
         {externalLinks && externalLinks.length > 0 && (
           <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
             {externalLinks.map(link => (

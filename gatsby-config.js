@@ -39,10 +39,6 @@ module.exports = {
             url: "https://github.com/carlosazaustre"
           },
           {
-            name: `Twitter`,
-            url: `https://twitter.com/carlosazaustre`
-          },
-          {
             name: "YouTube",
             url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1"
           },
@@ -91,12 +87,14 @@ module.exports = {
           {
             src: `/android-chrome-192x192.png`,
             sizes: `192x192`,
-            type: `image/png`
+            type: `image/png`,
+            purpose: `maskable`
           },
           {
             src: `/android-chrome-512x512.png`,
             sizes: `512x512`,
-            type: `image/png`
+            type: `image/png`,
+            purpose: `maskable`
           }
         ]
       }
