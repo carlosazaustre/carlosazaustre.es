@@ -5,11 +5,9 @@ type Props = {
     siteMetadata: {
       siteTitle: string
       siteTitleAlt: string
-      siteHeadline: string
       siteUrl: string
       siteDescription: string
       siteLanguage: string
-      siteImage: string
       author: string
       [key: string]: unknown
     }
@@ -23,11 +21,9 @@ const useSiteMetadata = () => {
         siteMetadata {
           siteTitle
           siteTitleAlt
-          siteHeadline
           siteUrl
           siteDescription
           siteLanguage
-          siteImage
           author
         }
       }
