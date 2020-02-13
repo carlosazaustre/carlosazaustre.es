@@ -9,7 +9,10 @@ module.exports = {
     siteUrl: `https://carlosazaustre.es`,
     siteLanguage: `es`,
     siteDescription: `Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
-    author: `@carlosazaustre`
+    author: `@carlosazaustre`,
+    social: {
+      twitter: `carlosazaustre`
+    }
   },
   plugins: [
     {
@@ -33,6 +36,10 @@ module.exports = {
           {
             name: "Ebook JS",
             url: "https://leanpub.com/aprendiendo-javascript"
+          },
+          {
+            name: "Twitter",
+            url: "https://twitter.com/carlosazaustre"
           },
           {
             name: "Github",

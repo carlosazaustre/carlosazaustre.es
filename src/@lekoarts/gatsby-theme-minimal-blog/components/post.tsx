@@ -7,6 +7,7 @@ import React from "react"
 import Layout from "./layout"
 import ItemTags from "./item-tags"
 import SEO from "./seo"
+import Author from "../../../components/author"
 
 type PostProps = {
   data: {
@@ -86,6 +87,7 @@ const Post = ({ data: { post } }: PostProps) => {
         }}
       >
         <MDXRenderer>{post.body}</MDXRenderer>
+        <Author />
         <Disqus config={disqusConfig} />
       </section>
     </Layout>

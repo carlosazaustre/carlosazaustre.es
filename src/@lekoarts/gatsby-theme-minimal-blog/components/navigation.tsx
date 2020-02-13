@@ -4,7 +4,6 @@ import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
-import TwitterFollowBtn from "../../../components/twitter-follow-button"
 
 type NavigationProps = {
   nav: {
@@ -30,7 +29,6 @@ const Navigation = ({ nav }: NavigationProps) => {
               {item.title}
             </Styled.a>
           ))}
-                  <TwitterFollowBtn username="carlosazaustre" />
         </nav>
       )}
     </React.Fragment>
