@@ -5,6 +5,24 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "redirects": [{
+      "source": "/blog/:post*",
+      "destination": "/:post",
+      "type": 301
+    },
+    {
+      "source": "/ir/digitalocean",
+      "destination": "https://www.digitalocean.com/?refcode=f716de9860aa"
+    },
+    {
+      "source": "/ebook-angular",
+      "destination": "https://leanpub.com/ebookAngular"
+    },
+    {
+      "source": "/blog/ebook-angular",
+      "destination": "https://leanpub.com/ebookAngular"
+    }
+  ]
   }
 }
