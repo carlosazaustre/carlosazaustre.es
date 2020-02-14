@@ -72,9 +72,9 @@ const Post = ({ data: { post } }: PostProps) => {
         <span>{post.timeToRead} min read</span>
         {` — `}
         <span>
-        <Link to={post.slug + `#disqus_thread`}>
-          <CommentCount config={disqusConfig} placeholder={`Comments`} />
-        </Link>
+          <Link to={post.slug + `#disqus_thread`}>
+            <CommentCount config={disqusConfig} placeholder={`Comments`} />
+          </Link>
         </span>
       </p>
       <section
@@ -87,6 +87,14 @@ const Post = ({ data: { post } }: PostProps) => {
         }}
       >
         <MDXRenderer>{post.body}</MDXRenderer>
+        <div>
+          <p>
+            ¿Quieres sugerir un cambio? ¿Alguna errata?{` `}
+            <a href={`https://github.com/carlosazaustre/carlosazaustre.es/blob/master/content/posts/${post.slug}/index.mdx`}>
+              Haz una <strong>Pull Request</strong>.
+            </a>
+          </p>
+        </div>
         <Author />
         <Disqus config={disqusConfig} />
       </section>
