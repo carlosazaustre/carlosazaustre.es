@@ -47,33 +47,8 @@
       "type": 301
     },
     {
-      "source": "/2014/",
-      "destination": "/blog",
-      "type": 301
-    },
-    {
-      "source": "/2015/",
-      "destination": "/blog",
-      "type": 301
-    },
-    {
-      "source": "/2016/",
-      "destination": "/blog",
-      "type": 301
-    },
-    {
-      "source": "/2017/",
-      "destination": "/blog",
-      "type": 301
-    },
-    {
-      "source": "/2018/",
-      "destination": "/blog",
-      "type": 301
-    },
-    {
-      "source": "/2019/",
-      "destination": "/blog",
+      "source": "/mejor-mochila-accesorios-laptop",
+      "destination": "/mochila",
       "type": 301
     }
   ]
