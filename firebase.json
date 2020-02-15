@@ -12,6 +12,21 @@
       "type": 301
     },
     {
+      "source": "/ghost/*",
+      "destination": "/",
+      "type": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/rss/index.xml",
+      "type": 301
+    },
+    {
+      "source": "/rss",
+      "destination": "/rss/index.xml",
+      "type": 301
+    },
+    {
       "source": "/ir/digitalocean",
       "destination": "https://www.digitalocean.com/?refcode=f716de9860aa",
       "type": 301
