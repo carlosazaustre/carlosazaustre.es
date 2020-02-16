@@ -123,8 +123,8 @@ module.exports = {
           {
             site {
               siteMetadata {
-                title
-                description
+                siteTitle
+                siteDescription
                 siteUrl
                 site_url: siteUrl
               }
