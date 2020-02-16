@@ -2,6 +2,8 @@ require(`dotenv`).config({
   path: `.env`,
 })
 
+const newsletterFeed = require('./src/@lekoarts/gatsby-theme-minimal-blog/utils/newsletterFeed')
+
 module.exports = {
   siteMetadata: {
     siteTitle: `carlosazaustre.es`,
@@ -68,6 +70,10 @@ module.exports = {
         enabled: (() =>
           ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
       }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: newsletterFeed
     },
     {
       resolve: `gatsby-plugin-disqus`,

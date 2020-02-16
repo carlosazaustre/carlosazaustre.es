@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "minimal-blog",
-  "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
+  "name": "carlosazaustre.es",
+  "description": "Blog sobre tecnologías web y JavaScrip. Build with Gatsby.",
   "version": "1.0.1",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Carlos Azaustre <cazaustre@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-minimal-blog",
   "scripts": {
@@ -20,6 +20,7 @@
     "@lekoarts/gatsby-theme-minimal-blog": "^2.0.1",
     "gatsby": "^2.13.3",
     "gatsby-plugin-disqus": "^1.1.4",
+    "gatsby-plugin-feed": "^2.3.27",
     "gatsby-plugin-google-analytics": "^2.1.4",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
