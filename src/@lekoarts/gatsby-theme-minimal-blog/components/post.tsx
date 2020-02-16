@@ -52,7 +52,6 @@ const Post = ({ data: { post } }: PostProps) => {
         title={post.title}
         description={post.description ? post.description : post.excerpt}
         image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
-        slug={post.slug}
       />
       <Styled.h2>{post.title}</Styled.h2>
       <p
@@ -91,7 +90,7 @@ const Post = ({ data: { post } }: PostProps) => {
         <MDXRenderer>{post.body}</MDXRenderer>
         <OpenPR
           slugPost={post.slug}
-          text="¿Ves alguna errata? ¿Quieres modificar algo?"
+          text="✎ ¿Ves alguna errata? ¿Quieres modificar algo?"
         />
         <Author />
         <Disqus config={disqusConfig} />

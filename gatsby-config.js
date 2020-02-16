@@ -6,9 +6,11 @@ module.exports = {
   siteMetadata: {
     siteTitle: `carlosazaustre.es`,
     siteTitleAlt: `carlosazaustre.es - Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
+    siteHeadline: `carlosazaustre.es - Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
     siteUrl: `https://carlosazaustre.es`,
     siteLanguage: `es`,
     siteDescription: `Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
+    siteImage: `/banner.jpg`,
     author: `@carlosazaustre`,
     social: {
       twitter: `carlosazaustre`
@@ -57,15 +59,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-theme-ui`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          "gatsby-remark-smartypants",
-          "gatsby-plugin-tkplaceholder-social-cards"
-        ]
-      }
-    },
     {
       resolve: "gatsby-plugin-sentry",
       options: {

@@ -50,6 +50,16 @@
       "source": "/mejor-mochila-accesorios-laptop",
       "destination": "/mochila",
       "type": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/rss.xml",
+      "type": 301
+    },
+    {
+      "source": "/rss",
+      "destination": "/rss.xml",
+      "type": 301
     }
   ]
   }
