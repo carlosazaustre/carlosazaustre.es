@@ -8,6 +8,7 @@ import Layout from "./layout"
 import ItemTags from "./item-tags"
 import SEO from "./seo"
 import Author from "../../../components/author"
+import OpenPR from "../../../components/open-pr"
 
 type PostProps = {
   data: {
@@ -88,14 +89,10 @@ const Post = ({ data: { post } }: PostProps) => {
         }}
       >
         <MDXRenderer>{post.body}</MDXRenderer>
-        <div>
-          <p>
-            ¿Quieres sugerir un cambio? ¿Alguna errata?{` `}
-            <a href={`https://github.com/carlosazaustre/carlosazaustre.es/blob/master/content/posts/${post.slug}/index.mdx`}>
-              Haz una <strong>Pull Request</strong>.
-            </a>
-          </p>
-        </div>
+        <OpenPR
+          slugPost={post.slug}
+          text="¿Ves alguna errata? ¿Quieres modificar algo?"
+        />
         <Author />
         <Disqus config={disqusConfig} />
       </section>
