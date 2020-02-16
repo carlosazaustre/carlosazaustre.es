@@ -58,6 +58,15 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          "gatsby-remark-smartypants",
+          "gatsby-plugin-tkplaceholder-social-cards"
+        ]
+      }
+    },
+    {
       resolve: "gatsby-plugin-sentry",
       options: {
         dsn: process.env.SENTRY_DSN,
@@ -107,7 +116,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -168,5 +176,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-react-helmet`
+    // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ]
 };
