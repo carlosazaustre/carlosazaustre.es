@@ -52,6 +52,7 @@ const Post = ({ data: { post } }: PostProps) => {
         title={post.title}
         description={post.description ? post.description : post.excerpt}
         image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
+        slug={post.slug}
       />
       <Styled.h2>{post.title}</Styled.h2>
       <p

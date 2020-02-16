@@ -14,11 +14,12 @@ type Props = {
   title?: string
   description?: string
   pathname?: string
+  slug?: string
   image?: string
   children?: React.ReactNode
 }
 
-const SEO = ({ title, description, pathname, image, children }: Props) => {
+const SEO = ({ title, description, pathname, slug, image, children }: Props) => {
   const site = useSiteMetadata()
 
   const {
@@ -34,6 +35,7 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
+    image: `${siteUrl}${slug}seo.jpg`
   }
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
