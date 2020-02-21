@@ -14,9 +14,9 @@ export default () => {
           justifyContent: `center`,
           marginBottom: `1.25em`,
           padding: `1.25em`,
-          backgroundColor: `#ffd600`,
+          backgroundColor: `#FCCB0B`,
           borderRadius: `10px`,
-          color: `#333`,
+          color: `#333`
         }}
       >
         <img
@@ -28,35 +28,36 @@ export default () => {
             margin: `0 auto`,
             width: 90,
             height: 90,
-            borderRadius: `100%`,
+            borderRadius: `100%`
           }}
         />
         <div>
           <p>
             Soy <strong>Carlos Azaustre</strong>. Me dedico al desarrollo web.
-            Actualmente trabajo como <strong>Senior Frontend Engineer</strong> en
-            Eventbrite. Fui nombrado en 2019 <strong>GDE (Google Developer Expert) en
-            Tecnologías Web</strong>. Desde 2013 intento documentar en éste blog todo lo
-            que aprendo y así compartirlo con el resto de la comunidad.
+            Actualmente trabajo como <strong>Senior Frontend Engineer</strong>{" "}
+            en Eventbrite. Fui nombrado en 2019{" "}
+            <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
+            Desde 2013 intento documentar en éste blog todo lo que aprendo y así
+            compartirlo con el resto de la comunidad.
             {` `}
           </p>
           <p>
             Si te gusta lo que lees, puedes apoyarme en mi <em>Patreon</em> o
             invitarme a un café virtual 🙂
           </p>
-          <p style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-evenly`,
-          }}>
-            <a
-              href="https://www.patreon.com/bePatron?u=2390240"
-            >
+          <p
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-evenly`
+            }}
+          >
+            <a href="https://www.patreon.com/bePatron?u=2390240">
               <img
                 src={patreonBtn}
-                style={{ 
+                style={{
                   width: `175px`,
-                  borderRadius: `5px`,
+                  borderRadius: `5px`
                 }}
               />
             </a>
@@ -67,12 +68,12 @@ export default () => {
               rel="noopener noreferrer"
             >
               <img
-                  src="https://cdn.buymeacoffee.com/buttons/lato-red.png"
-                  alt="Invítame a un Café"
-                  style={{ 
-                      width: `175px`,
-                      borderRadius: `5px`,
-                  }}
+                src="https://cdn.buymeacoffee.com/buttons/lato-red.png"
+                alt="Invítame a un Café"
+                style={{
+                  width: `175px`,
+                  borderRadius: `5px`
+                }}
               />
             </a>
           </p>

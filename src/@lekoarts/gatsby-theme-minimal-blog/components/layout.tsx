@@ -11,26 +11,31 @@ import SkipNavLink from "./skip-nav"
 type LayoutProps = { children: React.ReactNode; className?: string }
 
 const Layout = ({ children, className }: LayoutProps) => (
-  <Styled.root data-testid="theme-root">
+  <Styled.root
+    data-testid="theme-root"
+    style={{
+      borderTop: `.5em solid #FCCB0B`
+    }}
+  >
     <Global
       styles={css({
         "*": {
-          boxSizing: `inherit`,
+          boxSizing: `inherit`
         },
         body: {
           margin: 0,
           padding: 0,
           boxSizing: `border-box`,
-          textRendering: `optimizeLegibility`,
+          textRendering: `optimizeLegibility`
         },
         "::selection": {
           backgroundColor: `secondary`,
-          color: `white`,
+          color: `white`
         },
         a: {
           transition: `all 0.3s ease-in-out`,
-          color: `text`,
-        },
+          color: `text`
+        }
       })}
     />
     <SEO />
@@ -43,6 +48,6 @@ const Layout = ({ children, className }: LayoutProps) => (
       <Footer />
     </Container>
   </Styled.root>
-)
+);
 
 export default Layout
