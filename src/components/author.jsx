@@ -8,7 +8,7 @@ export default () => {
       <div
         style={{
           display: `flex`,
-          // flexDirection: `column`,
+          flexDirection: `column`,
           alignItems: `start`,
           flexWrap: `no-wrap`,
           justifyContent: `center`,
@@ -34,9 +34,9 @@ export default () => {
         <div>
           <p>
             Soy <strong>Carlos Azaustre</strong>. Me dedico al desarrollo web.
-            Actualmente trabajo como <em>Senior Frontend Engineer</em> en
-            Eventbrite. Fui nombrado en 2019 GDE (Google Developer Expert) en
-            Tecnologías Web. Desde 2013 intento documentar en éste blog todo lo
+            Actualmente trabajo como <strong>Senior Frontend Engineer</strong> en
+            Eventbrite. Fui nombrado en 2019 <strong>GDE (Google Developer Expert) en
+            Tecnologías Web</strong>. Desde 2013 intento documentar en éste blog todo lo
             que aprendo y así compartirlo con el resto de la comunidad.
             {` `}
           </p>
