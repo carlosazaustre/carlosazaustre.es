@@ -38,10 +38,6 @@ module.exports = {
             url: "https://cursos.carlosazaustre.es"
           },
           {
-            name: "Ebook JS",
-            url: "https://leanpub.com/aprendiendo-javascript"
-          },
-          {
             name: "Twitter",
             url: "https://twitter.com/carlosazaustre"
           },

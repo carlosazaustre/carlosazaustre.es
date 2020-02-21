@@ -55,9 +55,9 @@ export default () => {
               <img
                 src={patreonBtn}
                 style={{ 
-                      width: `175px`,
-                      borderRadius: `5px`,
-                  }}
+                  width: `175px`,
+                  borderRadius: `5px`,
+                }}
               />
             </a>
             {` `}
