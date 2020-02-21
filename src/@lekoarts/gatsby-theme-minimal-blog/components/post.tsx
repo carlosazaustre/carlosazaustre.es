@@ -62,19 +62,19 @@ const Post = ({ data: { post } }: PostProps) => {
           fontSize: [1, 1, 2]
         }}
       >
-        <time>{post.date}</time>
+        🗓 <time>{post.date}</time>
         {post.tags && (
           <React.Fragment>
-            {` — `}
+            {` | `}
             <ItemTags tags={post.tags} />
           </React.Fragment>
         )}
-        {` — `}
-        <span>{post.timeToRead} min read</span>
-        {` — `}
+        {` | `}
+        <span>🕐 {post.timeToRead} minutos de lectura</span>
+        {` | `}
         <span>
           <Link to={post.slug + `#disqus_thread`}>
-            <CommentCount config={disqusConfig} placeholder={`Comments`} />
+            💬 <CommentCount config={disqusConfig} placeholder={`Comments`} />
           </Link>
         </span>
       </p>
