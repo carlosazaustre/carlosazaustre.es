@@ -35,8 +35,7 @@ export default () => {
           <p>
             Soy <strong>Carlos Azaustre</strong>. Me dedico al desarrollo web.
             Actualmente trabajo como <strong>Senior Frontend Engineer</strong>{" "}
-            en Eventbrite. Fui nombrado en 2019{" "}
-            <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
+            en Eventbrite. Fui nombrado en 2019 <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
             Desde 2013 intento documentar en éste blog todo lo que aprendo y así
             compartirlo con el resto de la comunidad.
             {` `}
@@ -54,6 +53,7 @@ export default () => {
           >
             <a href="https://www.patreon.com/bePatron?u=2390240">
               <img
+                alt="Se mi patrón"
                 src={patreonBtn}
                 style={{
                   width: `175px`,
