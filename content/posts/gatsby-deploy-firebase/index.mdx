@@ -6,7 +6,7 @@ banner: "./gatsby-deploy-firebase-seo.jpg"
 tags:
     - "💻 Desarrollo"
 ---
-Recientemente he migrado este blog a Gatsby para hacerlo más *serverless* y mi intención era subirlo a un CDN e implementar *integración continua* para olvidarme de desplegar manualmente. En este artículo te explico como lo he montado yo con Firebase Hosting y Travis. ¡Vamos a ello!
+Recientemente he migrado este blog a Gatsby para hacerlo más *serverless* y mi intención era subirlo a un CDN e implementar *integración continua* para olvidarme de desplegar manualmente. En este artículo te explico cómo lo he montado yo con Firebase Hosting y Travis. ¡Vamos a ello!
 
 ## Instalar Gatsby e iniciar proyecto
 Lo primero es tener un sitio, o blog, con Gatsby. En futuros posts hablaré sobre el y cómo he configurado mi sitio. En éste artículo vamos a centrarnos en el despliegue continuo, por ello voy a tomar de ejemplo el [gatsby-starter-blog](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/) como punto de partida.
@@ -17,7 +17,7 @@ Para ello, primero necesitamos tener instalado `node.js` en nuestro equipo para 
 $ npm install -g gatsby-cli
 ```
 
-Una vez instalado podemos usar el siguiente comando para iniciar un nuevo proyecto en Gatsby empleando el starter. Esto nos ahorrará tener que ficheros y carpetas.
+Una vez instalado podemos usar el siguiente comando para iniciar un nuevo proyecto en Gatsby empleando el starter. Esto nos ahorrará tener que crear los ficheros y carpetas.
 
 ```
 $ gatsby new TU_BLOG https://github.com/gatsbyjs/gatsby-starter-blog
@@ -43,7 +43,7 @@ Ahora ve a tu terminal de tu equipo instala las Firebase Tools:
 $ npm install -g firebase-tools
 ```
 
-Dirígete a la carpeta de tu proyecto creado con Gatsby e inicia Firebase en él despues de loguearte:
+Dirígete a la carpeta de tu proyecto creado con Gatsby e inicia Firebase en él después de loguearte:
 
 ```
 $ firebase login
@@ -146,7 +146,7 @@ Aquí vamos a configurar las variables de entorno que usemos en nuestro código,
 
 ![Variables de entorno en Gatsby](./gatsby-env.png)
 
-Para conseguir el token de Firebase podemos hacerlo por linea de comandos con la siguiente instrucción.
+Para conseguir el token de Firebase podemos hacerlo por línea de comandos con la siguiente instrucción.
 
 ```sh
 $ firebase login:ci
@@ -167,7 +167,7 @@ El texto que te aparezca del tipo `1//9d85ngk5UNXCkdjdur7bdNwF-L9Irud01Ji3UVC-e7
 
 ![configura tokens como variables de entorno en travis](./gatsby-env-firebase-token.png)
 
-Ahora ya tenemos Travis listo, sólo nos queda decirle que tiene que hacer :)
+Ahora ya tenemos Travis listo, sólo nos queda decirle qué tiene que hacer :)
 
 ## Travis.yml
 
