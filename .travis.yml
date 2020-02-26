@@ -1,15 +1,22 @@
 language: node_js
 node_js:
   - "10"
+  - "12"
 cache: yarn
 
-branches:
-  only:
-    - master
-before_deploy:
-  - "yarn global add firebase-tools"
-  - "yarn global add gatsby"
-  - "yarn build"
-deploy:
-  provider: script
-  script: "firebase deploy --token=${FIREBASE_API_TOKEN}
+jobs:
+  include:
+    - stage: build
+      script:
+        - "yarn global add gatsby"
+        - "yarn build"
+    - stage: deploy
+      script:
+        - "yarn global add firebase-tools"
+        - "firebase deploy --token=${FIREBASE_API_TOKEN}"
+
+stages:
+  - name: "build"
+    if: type = pull_request
+  - name: "deploy"
+    if: branch = master
