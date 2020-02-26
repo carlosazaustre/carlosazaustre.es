@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "dev": "yarn clean && yarn develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Warning: no test specified\" && exit 0"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^2.0.1",
