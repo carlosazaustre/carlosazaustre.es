@@ -12,6 +12,4 @@ before_deploy:
   - "yarn build"
 deploy:
   provider: script
-  script: "firebase deploy --token=${FIREBASE_API_TOKEN}"
-  on:
-    branch: master
+  script: "firebase deploy --token=${FIREBASE_API_TOKEN}
