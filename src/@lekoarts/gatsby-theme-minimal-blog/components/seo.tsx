@@ -38,7 +38,11 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
     image: `${siteUrl}${image || defaultImage}`
   }
   return (
-    <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
+    <Helmet
+      title={title}
+      defaultTitle={defaultTitle}
+      titleTemplate={`%s | ${siteTitle}`}
+    >
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -55,12 +59,26 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:image:alt" content={seo.description} />
       <meta name="twitter:creator" content={author} />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
       {children}
     </Helmet>
-  )
+  );
 }
 
 export default SEO
