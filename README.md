@@ -1,4 +1,4 @@
-[![carlosazaustre.es](./static/logo-text.png)](https://carlosazaustre.es)
+[![carlosazaustre.es](./static/banner.jpg)](https://carlosazaustre.es)
 
 # [carlosazaustre.es](https://carlosazaustre.es) - Desarrollo y Formación en JavaScript
 
