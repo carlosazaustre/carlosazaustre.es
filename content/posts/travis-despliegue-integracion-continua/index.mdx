@@ -1,6 +1,6 @@
 ---
 title: 'Configurar Travis como herramienta para Integración y Despliegue contínuo'
-date: 2020-02-27
+date: 2020-02-29
 slug: '/travis-despliegue-integracion-continua'
 banner: './travis-seo.png'
 tags:
@@ -83,15 +83,15 @@ script:
 
 Ahora, cada vez que hagas un cambio y hagas *push*, Travis disparará el proceso de *build*
 
-![Travis haciendo el build](./)
+![Travis haciendo el build](./travis-build.png)
 
 Al haber configurando anteriormente el repositorio en Travis, al crear la *pull request*, nos aparecerá lo siguiente:
 
-![Travis informando en Github](./)
+![Travis informando en Github](./travis-github-info.png)
 
 Dependiendo de las restricciones que pongas al proyecto, yo por ejemplo tengo puedo no poder mergear si Travis no lanza un OK, podrás mergear o no.
 
-![Travis da el OK, a mergear!](./)
+![Travis da el OK, a mergear!](./travis-github-ok.png)
 
 En esta etapa, como hemos dicho anteriormente, es recomendable que se ejecuten todos los tests posible: unitarios, de integración, etc... para asegurarnos de que todo está como queremos y no llevarnos sorpresas desagradables al subir a producción.
 
