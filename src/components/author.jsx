@@ -1,4 +1,5 @@
 import React from "react"
+import NewsletterForm from "./newsletter";
 import profilePic from "../../static/carlos-azaustre-gde-web.png"
 import patreonBtn from "../../static/become_a_patron_button.png";
 
@@ -77,6 +78,7 @@ export default () => {
               />
             </a>
           </p>
+          <NewsletterForm />
         </div>
       </div>
     );
