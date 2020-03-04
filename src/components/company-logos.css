@@ -1,0 +1,17 @@
+.CompanyLogos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4em auto;
+    justify-content: center;
+}
+
+.CompanyLogos_img {
+    width: 190px;
+}
+
+@media (min-width: 320px) {
+    .CompanyLogos {
+        flex-direction: row;
+    }
+}

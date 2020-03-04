@@ -1,7 +1,6 @@
 import React from "react"
 import NewsletterForm from "./newsletter";
 import profilePic from "../../static/carlos-azaustre-gde-web.png"
-import patreonBtn from "../../static/become_a_patron_button.png";
 
 export default () => {
 
@@ -42,7 +41,7 @@ export default () => {
             {` `}
           </p>
           <p>
-            Si te gusta lo que lees, puedes apoyarme en mi <em>Patreon</em> o
+              Si te gusta lo que lees, puedes ser <a href="https://github.com/sponsors/carlosazaustre">mi sponsor a través de GitHub</a>, o
             invitarme a un café virtual 🙂
           </p>
           <p
@@ -52,17 +51,6 @@ export default () => {
               justifyContent: `space-evenly`
             }}
           >
-            <a href="https://www.patreon.com/bePatron?u=2390240">
-              <img
-                alt="Se mi patrón"
-                src={patreonBtn}
-                style={{
-                  width: `175px`,
-                  borderRadius: `5px`
-                }}
-              />
-            </a>
-            {` `}
             <a
               href="https://www.buymeacoffee.com/carlosazaustre"
               target="_blank"
