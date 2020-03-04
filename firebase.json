@@ -17,6 +17,11 @@
       "type": 301
     },
     {
+      "source": "sobre-mi",
+      "destination": "/about",
+      "type": 301
+    },
+    {
       "source": "/ebook-angular",
       "destination": "https://leanpub.com/ebookAngular",
       "type": 301

@@ -1,6 +1,6 @@
 import React from "react"
+import NewsletterForm from "./newsletter";
 import profilePic from "../../static/carlos-azaustre-gde-web.png"
-import patreonBtn from "../../static/become_a_patron_button.png";
 
 export default () => {
 
@@ -40,43 +40,7 @@ export default () => {
             compartirlo con el resto de la comunidad.
             {` `}
           </p>
-          <p>
-            Si te gusta lo que lees, puedes apoyarme en mi <em>Patreon</em> o
-            invitarme a un café virtual 🙂
-          </p>
-          <p
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-evenly`
-            }}
-          >
-            <a href="https://www.patreon.com/bePatron?u=2390240">
-              <img
-                alt="Se mi patrón"
-                src={patreonBtn}
-                style={{
-                  width: `175px`,
-                  borderRadius: `5px`
-                }}
-              />
-            </a>
-            {` `}
-            <a
-              href="https://www.buymeacoffee.com/carlosazaustre"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn.buymeacoffee.com/buttons/lato-red.png"
-                alt="Invítame a un Café"
-                style={{
-                  width: `175px`,
-                  borderRadius: `5px`
-                }}
-              />
-            </a>
-          </p>
+          <NewsletterForm />
         </div>
       </div>
     );
