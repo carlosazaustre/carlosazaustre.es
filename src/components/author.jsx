@@ -1,4 +1,5 @@
 import React from "react"
+import NewsletterForm from "./newsletter";
 import profilePic from "../../static/carlos-azaustre-gde-web.png"
 
 export default () => {
@@ -39,32 +40,7 @@ export default () => {
             compartirlo con el resto de la comunidad.
             {` `}
           </p>
-          <p>
-              Si te gusta lo que lees, puedes ser <a href="https://github.com/sponsors/carlosazaustre">mi sponsor a través de GitHub</a>, o
-            invitarme a un café virtual 🙂
-          </p>
-          <p
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-evenly`
-            }}
-          >
-            <a
-              href="https://www.buymeacoffee.com/carlosazaustre"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn.buymeacoffee.com/buttons/lato-red.png"
-                alt="Invítame a un Café"
-                style={{
-                  width: `175px`,
-                  borderRadius: `5px`
-                }}
-              />
-            </a>
-          </p>
+          <NewsletterForm />
         </div>
       </div>
     );
