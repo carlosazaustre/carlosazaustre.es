@@ -38,7 +38,7 @@ const styles = {
 
 export default () => (
     <div style={styles.wrapper}>
-        <h4 style={{ textAlign: "center", fontSize: "1.4em" }}>Únete y estate al día en desarrollo web</h4>
+        <h4 style={{ textAlign: "center", fontSize: "1.4em" }}><span role="img" aria-label="inbox">📬</span> Únete y estate al día en desarrollo web</h4>
         <p>Recibe puntualmente información sobre las últimas novedades en tecnologías web y desarrollo web moderno para que estés siempre actualizadx:</p>
         <form style={styles.form} action="https://app.mailerlite.com/webforms/submit/e0t6z8" data-code="e0t6z8" method="post" target="_blank">
             <div style={styles.block}>
