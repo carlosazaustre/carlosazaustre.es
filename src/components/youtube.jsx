@@ -26,6 +26,7 @@ export default ({ videoId, playlist }) => {
           style={styles.iframe}
           src={`https://www.youtube.com/embed/${videoId}`}
           frameBorder="0"
+          loading="lazy"
         />
       )}
 
@@ -35,6 +36,7 @@ export default ({ videoId, playlist }) => {
           style={styles.iframe}
           src={`https://www.youtube.com/embed/videoseries?list=${playlist}`}
           frameBorder="0"
+          loading="lazy"
         />
       )}
     </div>
