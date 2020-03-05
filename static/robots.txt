@@ -1,3 +1,5 @@
 User-agent: *
+Disallow: /subscripcion
+Disallow: /subscripcion-confirmada
 
 sitemap: https://carlosazaustre.es/sitemap.xml
