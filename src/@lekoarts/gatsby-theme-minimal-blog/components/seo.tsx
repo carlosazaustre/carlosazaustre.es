@@ -41,7 +41,7 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
     <Helmet
       title={title}
       defaultTitle={defaultTitle}
-      titleTemplate={`%s | ${siteTitle}`}
+      titleTemplate={`%s`}
     >
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
