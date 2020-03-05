@@ -42,13 +42,13 @@ export default () => (
         <p>Recibe puntualmente información sobre las últimas novedades en tecnologías web y desarrollo web moderno para que estés siempre actualizadx:</p>
         <form style={styles.form} action="https://app.mailerlite.com/webforms/submit/e0t6z8" data-code="e0t6z8" method="post" target="_blank">
             <div style={styles.block}>
-                <input type="text" style={styles.input} data-inputmask="" name="fields[name]" placeholder="Tu Nombre..." autocomplete="name" />
-                <input type="email" style={styles.input} data-inputmask="" name="fields[email]" placeholder="Tu Email..." autocomplete="email"/>
+                <input type="text" style={styles.input} data-inputmask="" name="fields[name]" placeholder="Tu Nombre..." autoComplete="name" />
+                <input type="email" style={styles.input} data-inputmask="" name="fields[email]" placeholder="Tu Email..." autoComplete="email"/>
             </div>
             <input type="hidden" name="ml-submit" value="1"/>
             <div className="ml-form-embedSubmit">
                 <button type="submit" style={styles.button}>Únete!</button>
-                <button disabled="disabled" style={{ display:"none"}} type="button" classNameName="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                <button disabled="disabled" style={{ display:"none"}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
             </div>
         </form>
         <small style={{ display: "block", textAlign: "center", margin: "0 auto" }}><span role="img" aria-label="secure">🔒</span> Libre de Spam. Sólo contenido que te interesa.</small>
