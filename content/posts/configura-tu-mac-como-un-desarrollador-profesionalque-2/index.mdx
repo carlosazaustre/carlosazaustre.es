@@ -78,17 +78,17 @@ function precmd() {
 ```
 Se ejecutará el comando `ls` que lista los archivos del directorio en el que nos encontremos cada vez que ejecutemos un comando.
 
-Tambien podemos crear alias para comandos, y así ahorrarnos escribir. Por ejemplo, podemos hacer que el comando `ll` sea el equivalente a `ls -al` para mostrar los ficheros de un directorio en 1 columna, incluyendo los archivos ocultos. Eso lo podemos hacer con la siguiente línea:
+También podemos crear alias para comandos, y así ahorrarnos escribir. Por ejemplo, podemos hacer que el comando `ll` sea el equivalente a `ls -al` para mostrar los ficheros de un directorio en 1 columna, incluyendo los archivos ocultos. Eso lo podemos hacer con la siguiente línea:
 `alias ll = 'ls -al'`
 
-Tambien es muy útilo para comandos de Git. podemos hacer los siguientes alias:
+También es muy útil para comandos de Git:
 ```sh
 alias ga = 'git add'
 alias gc = 'git commit -m'
 alias gst = 'git status'
 ```
 
-Y a continuación unas funciones que te harán ahorra tiempo:
+Y a continuación unas funciones que te harán ahorrar tiempo:
 ```shell
 function take() {
   mkdir $1
