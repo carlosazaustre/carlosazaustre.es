@@ -7,7 +7,6 @@ import Header from "./header"
 import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
-import BannerBook from "../../../components/banner-book";
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -40,7 +39,6 @@ const Layout = ({ children, className }: LayoutProps) => (
       })}
     />
     <SEO />
-    <BannerBook />
     <SkipNavLink>Ver contenido</SkipNavLink>
     <Container>
       <Header />
