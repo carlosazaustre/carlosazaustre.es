@@ -35,12 +35,17 @@ export default () => {
           <p>
             Soy <strong>Carlos Azaustre</strong>. Me dedico al desarrollo web.
             Actualmente trabajo como <strong>Senior Frontend Engineer</strong>{" "}
-            en Eventbrite. Fui nombrado en 2019 <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
+            en Eventbrite. Fui nombrado en 2019{" "}
+            <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
             Desde 2013 intento documentar en éste blog todo lo que aprendo y así
             compartirlo con el resto de la comunidad.
             {` `}
           </p>
-          <NewsletterForm />
+          <NewsletterForm
+            title="📬 Únete y estate al día en desarrollo web"
+            text="Recibe puntualmente información sobre las últimas novedades en tecnologías
+      web y desarrollo web moderno para que estés siempre actualizadx:"
+          />
         </div>
       </div>
     );
