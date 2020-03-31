@@ -30,6 +30,7 @@
     "gatsby-plugin-sitemap": "^2.2.19",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "react": "^16.9.0",
+    "react-countdown-circle-timer": "^1.1.1",
     "react-dom": "^16.9.0",
     "react-github-btn": "^1.1.1"
   },
