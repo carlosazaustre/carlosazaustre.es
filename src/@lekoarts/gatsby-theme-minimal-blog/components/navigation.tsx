@@ -34,7 +34,7 @@ const Navigation = ({ nav }: NavigationProps) => {
             activeClassName="active"
             href={`https://leanpub.com/aprendiendo-javascript`}
           >
-            Aprende JavaScript
+            📙 Ebook: "Aprende JavaScript"
           </Styled.a>
         </nav>
       )}

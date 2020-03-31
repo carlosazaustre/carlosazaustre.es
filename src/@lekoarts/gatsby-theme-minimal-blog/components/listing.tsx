@@ -17,7 +17,7 @@ type ListingProps = {
 }
 
 const Listing = ({ posts, className, showTags = true }: ListingProps) => (
-  <section sx={{ mb: [5, 6, 7] }} className={className}>
+  <section sx={{ mb: [4, 5, 6] }} className={className}>
     {posts.map(post => (
       <BlogListItem key={post.slug} post={post} showTags={showTags} />
     ))}
