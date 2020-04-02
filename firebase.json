@@ -12,6 +12,11 @@
       "type": 301
     },
     {
+      "source": "/links",
+      "destination": "https://linktr.ee/carlosazaustre",
+      "type": 301
+    },
+    {
       "source": "/ir/digitalocean",
       "destination": "https://www.digitalocean.com/?refcode=f716de9860aa",
       "type": 301
