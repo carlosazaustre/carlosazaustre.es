@@ -30,6 +30,10 @@ module.exports = {
           {
             title: `Sobre Mi`,
             slug: `/about`
+          },
+          {
+            title: `Asesoría`,
+            slug: `/videollamada`
           }
         ],
         externalLinks: [
