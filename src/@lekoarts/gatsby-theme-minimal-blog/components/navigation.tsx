@@ -29,13 +29,6 @@ const Navigation = ({ nav }: NavigationProps) => {
               {item.title}
             </Styled.a>
           ))}
-          <Styled.a
-            key={`aprende-javascript`}
-            activeClassName="active"
-            href={`https://leanpub.com/aprendiendo-javascript`}
-          >
-            📙 Ebook: "Aprende JavaScript"
-          </Styled.a>
         </nav>
       )}
     </React.Fragment>

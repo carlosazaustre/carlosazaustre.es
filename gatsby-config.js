@@ -34,16 +34,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: "Cursos",
-            url: "https://cursos.carlosazaustre.es"
-          },
-          {
-            name: "Twitter",
-            url: "https://twitter.com/carlosazaustre"
-          },
-          {
-            name: "Github",
-            url: "https://github.com/carlosazaustre"
+            name: "🎓 FullstackJS Academy",
+            url: "https://fullstackjs.academy"
           },
           {
             name: "YouTube",

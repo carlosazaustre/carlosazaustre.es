@@ -50,6 +50,7 @@ export default ({
   >
     <h4
       className={css`
+        color: #222;
         text-align: center;
         font-size: 1.4em;
       `}
@@ -58,6 +59,7 @@ export default ({
     </h4>
     <p
       className={css`
+        color: #222;
         text-align: center;
       `}
     >
@@ -109,7 +111,7 @@ export default ({
         </button>
       </div>
     </form>
-    <small style={{ display: "block", textAlign: "center", margin: "0 auto" }}>
+    <small style={{ display: "block", color: "#222", textAlign: "center", margin: "0 auto" }}>
       <span role="img" aria-label="secure">
         🔒
       </span>{" "}
