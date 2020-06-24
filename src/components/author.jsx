@@ -2,8 +2,7 @@ import React from "react"
 import NewsletterForm from "./newsletter";
 import profilePic from "../../static/carlos-azaustre-gde-web.png"
 
-export default () => {
-
+export default ({ showNewsletter = true }) => {
     return (
       <div
         style={{
@@ -26,8 +25,8 @@ export default () => {
             display: `block`,
             marginRight: `1em`,
             margin: `0 auto`,
-            width: 90,
-            height: 90,
+            width: 120,
+            height: 120,
             borderRadius: `100%`
           }}
         />
@@ -41,11 +40,13 @@ export default () => {
             compartirlo con el resto de la comunidad.
             {` `}
           </p>
-          <NewsletterForm
-            title="📬 Únete y estate al día en desarrollo web"
-            text="Recibe puntualmente información sobre las últimas novedades en tecnologías
-      web y desarrollo web moderno para que estés siempre actualizadx:"
-          />
+          {
+            showNewsletter && <NewsletterForm
+              title="📬 Únete y estate al día en desarrollo web"
+              text="Recibe puntualmente información sobre las últimas novedades en tecnologías
+                    web y desarrollo web moderno para que estés siempre actualizadx:"
+            />
+          }
         </div>
       </div>
     );

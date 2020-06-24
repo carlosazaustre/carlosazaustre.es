@@ -30,6 +30,10 @@ module.exports = {
           {
             title: `Sobre Mi`,
             slug: `/about`
+          },
+          {
+            title: `Asesoría`,
+            slug: `/videollamada`
           }
         ],
         externalLinks: [
@@ -103,7 +107,21 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_self",
+              rel: "nofollow"
+            }
+          }
+        ]
+      }
+    }
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ]
 };

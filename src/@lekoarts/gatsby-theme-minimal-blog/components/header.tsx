@@ -27,10 +27,10 @@ const Header = () => {
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
         >
-          <h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
+          <div sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
               <img src={logo} alt={siteTitle} />&nbsp; 
               {siteTitle}
-         </h1>
+         </div>
         </Link>
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </Flex>

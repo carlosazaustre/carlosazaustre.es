@@ -53,7 +53,7 @@ const Post = ({ data: { post } }: PostProps) => {
         description={post.description ? post.description : post.excerpt}
         image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
       />
-      <Styled.h2>{post.title}</Styled.h2>
+      <Styled.h1>{post.title}</Styled.h1>
       <p
         sx={{
           color: `secondary`,
