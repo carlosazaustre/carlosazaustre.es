@@ -43,7 +43,7 @@ const Layout = ({ children, className }: LayoutProps) => (
     <Container css={css`
       margin: 0 auto;
       margin-top: 2em;
-      max-width: 800px;
+      max-width: 1024px;
     `}>
       <Header />
       <div id="skip-nav" css={css({ ...CodeStyles })} className={className}>
