@@ -18,7 +18,7 @@ type PageProps = {
 const Page = ({ data: { page } }: PageProps) => (
   <Layout>
     <SEO title={page.title} description={page.excerpt} />
-    <Styled.h2>{page.title}</Styled.h2>
+    <Styled.h1>{page.title}</Styled.h1>
     <section sx={{ my: 5 }}>
       <MDXRenderer>{page.body}</MDXRenderer>
     </section>
