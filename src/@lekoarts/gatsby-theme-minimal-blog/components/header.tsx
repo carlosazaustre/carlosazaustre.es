@@ -8,6 +8,7 @@ import ColorModeToggle from "./colormode-toggle"
 import Navigation from "./navigation"
 import replaceSlashes from "../utils/replaceSlashes"
 import logo from "../../../../static/favicon-32x32.png"
+import ExternalLink from "../../../components/external-link"
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata()
@@ -52,9 +53,7 @@ const Header = () => {
         {externalLinks && externalLinks.length > 0 && (
           <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
             {externalLinks.map(link => (
-              <Styled.a key={link.url} href={link.url}>
-                {link.name}
-              </Styled.a>
+              <ExternalLink key={link.url} href={link.url} text={link.name} />
             ))}
           </div>
         )}
