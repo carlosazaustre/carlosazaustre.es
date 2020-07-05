@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from 'emotion';
 
-export default ({ link, text }) => {
+export default ({ link, text, width = '300px' }) => {
   return (
     <div
       className={css`
@@ -12,15 +12,21 @@ export default ({ link, text }) => {
       <a
         className={css`
           display: block;
-          width: 300px;
+          width: 200px
           margin: 1rem auto;
           padding: 1rem;
-          background-color: #fccb0b;
+          color: #222;
+          background-color: #FFB934;
           border-radius: 10px;
-          font-size: 1.5em;
           font-weight: 700;
+          font-size: 1.5em;
           text-decoration: none;
           text-align: center;
+
+          @media and (min-width: 501px) {
+            width: ${width};
+            font-size: 1.5em;
+          }
         `}
         href={link}
         target="_blank"

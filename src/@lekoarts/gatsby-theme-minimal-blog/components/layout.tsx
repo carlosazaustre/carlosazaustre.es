@@ -1,7 +1,7 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react";
 import { Global } from "@emotion/core"
-import { Box, Styled, Container, css } from "theme-ui"
+import { Styled, Container, css } from "theme-ui"
 import "typeface-ibm-plex-sans"
 import SEO from "./seo"
 import Header from "./header"
@@ -16,12 +16,7 @@ const Layout = ({ children, className }: LayoutProps) => (
   <MDXProvider
     components={{ ExternalLink }}
   >
-    <Styled.root
-      data-testid="theme-root"
-      style={{
-        borderTop: `.5em solid #FCCB0B`
-      }}
-      >
+    <Styled.root data-testid="theme-root">
       <Global
         styles={css({
           "*": {
@@ -31,7 +26,8 @@ const Layout = ({ children, className }: LayoutProps) => (
             margin: 0,
             padding: 0,
             boxSizing: `border-box`,
-            textRendering: `optimizeLegibility`
+            textRendering: `optimizeLegibility`,
+            borderTop: `10px solid #FFB934`
           },
           "::selection": {
             backgroundColor: `secondary`,
@@ -39,14 +35,16 @@ const Layout = ({ children, className }: LayoutProps) => (
           },
           a: {
             transition: `all 0.3s ease-in-out`,
-            color: `#d69e2e`          }
+            color: `#FFB934`          }
         })}
       />
       <SEO />
       <SkipNavLink>Ver contenido</SkipNavLink>
       <Container css={css`
+        background-color: #fff;
         margin: 0 auto;
-        margin-top: 2em;
+        padding: 0.5rem 1.5rem;
+        margin-top: 1em;
         max-width: 1024px;
       `}>
         <Header />

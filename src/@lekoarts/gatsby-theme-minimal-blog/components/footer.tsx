@@ -22,7 +22,7 @@ const Footer = () => {
       }}
     >
       <div>
-        &copy; {new Date().getFullYear()} por {siteTitle}. All rights reserved.
+        &copy; {new Date().getFullYear()} por Carlos Azaustre. Todos los derechos reservados.
       </div>
       <div>
       <Link

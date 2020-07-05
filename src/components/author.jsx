@@ -13,7 +13,7 @@ export default ({ showNewsletter = true }) => {
           justifyContent: `center`,
           marginBottom: `1.25em`,
           padding: `1.25em`,
-          backgroundColor: `#FCCB0B`,
+          backgroundColor: `#FFB934`,
           borderRadius: `10px`,
           color: `#333`
         }}
@@ -27,14 +27,14 @@ export default ({ showNewsletter = true }) => {
             margin: `0 auto`,
             width: 120,
             height: 120,
-            borderRadius: `100%`
+            borderRadius: `100%`,
+            border: `3px solid white`,
           }}
         />
         <div>
           <p>
-            Soy <strong>Carlos Azaustre</strong>. Me dedico al desarrollo web.
-            Actualmente trabajo como <strong>Senior Frontend Engineer</strong>{" "}
-            en Eventbrite. Fui nombrado en 2019{" "}
+            Soy <strong>Carlos Azaustre</strong>. Desarrollador web desde hace más de 8 años.
+            He trabajado en Google, IBM y Eventbrite. Soy{" "}
             <strong>GDE (Google Developer Expert) en Tecnologías Web</strong>.
             Desde 2013 intento documentar en éste blog todo lo que aprendo y así
             compartirlo con el resto de la comunidad.
