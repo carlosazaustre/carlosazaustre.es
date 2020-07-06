@@ -9,16 +9,17 @@ const styles = {
     },
     block: {
         display: "flex",
-        justifyContent: "space-around"
+        flexDirection: "column",
+        alignItems: "center"
     },
     input: {
-        margin: "1em",
         padding: "1em",
+        margin: "0.5em",
         borderRadius: "5px",
         borderWidth: "0",
         borderColor: "gray",
         fontSize: "10pt",
-        width: "45%"
+        width: "250px",
     },
     button: {
         width: "250px",
@@ -43,7 +44,7 @@ export default ({
 }) => (
   <div
     className={css`
-      background-color: #fccb0b;
+      background-color: #FFB934;
       padding: 1em;
       border-radius: 5px;
     `}
@@ -66,6 +67,7 @@ export default ({
       {text}
     </p>
     <form
+      id="newsletter"
       style={styles.form}
       action={`https://app.mailerlite.com/webforms/submit/${formId}`}
       data-code={dataCode}

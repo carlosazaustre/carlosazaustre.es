@@ -92,8 +92,8 @@ const Post = ({ data: { post } }: PostProps) => {
           slugPost={post.slug}
           text="✎ ¿Ves alguna errata? ¿Quieres modificar algo?"
         />
-        <Author />
         <Disqus config={disqusConfig} />
+        <Author />
       </section>
     </Layout>
   );
