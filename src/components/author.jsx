@@ -13,9 +13,9 @@ export default ({ showNewsletter = true }) => {
           justifyContent: `center`,
           marginBottom: `1.25em`,
           padding: `1.25em`,
-          backgroundColor: `#FFB934`,
+          backgroundColor: `rgba(190,190,190, 0.3)`,
           borderRadius: `10px`,
-          color: `#333`
+          // color: `#333`
         }}
       >
         <img
