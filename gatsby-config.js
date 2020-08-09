@@ -42,7 +42,7 @@ module.exports = {
             slug: `/about`
           },
           {
-            title: `Videollamada`,
+            title: `Sesión 1 a 1`,
             slug: `/videollamada`
           }
         ],
