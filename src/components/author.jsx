@@ -42,7 +42,7 @@ export default ({ showNewsletter = true }) => {
           </p>
           {
             showNewsletter && <NewsletterForm
-              title="📬 Únete y estate al día en desarrollo web"
+              title="📬 Únete y ponte al día en desarrollo web"
               text="Recibe puntualmente información sobre las últimas novedades en tecnologías
                     web y desarrollo web moderno para que estés siempre actualizadx:"
             />
