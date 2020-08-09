@@ -44,7 +44,7 @@ export default ({
 }) => (
   <div
     className={css`
-      background-color: #FFB934;
+      background-color: #FBCF65;
       padding: 1em;
       border-radius: 5px;
     `}

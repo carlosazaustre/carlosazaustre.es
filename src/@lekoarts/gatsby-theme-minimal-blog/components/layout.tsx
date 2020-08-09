@@ -27,7 +27,7 @@ const Layout = ({ children, className }: LayoutProps) => (
             padding: 0,
             boxSizing: `border-box`,
             textRendering: `optimizeLegibility`,
-            borderTop: `10px solid #FFB934`
+            borderTop: `10px solid #FBCF65`
           },
           "::selection": {
             backgroundColor: `secondary`,
