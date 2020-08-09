@@ -19,7 +19,7 @@ export const Hero = ({
           Trabajando en empresas como <em> Google, IBM y Eventbrite</em>.
         </p>
         <p>
-          Soy <strong>Google Developer Expert (GDE)</strong> en
+          Reconocido por Google como <strong>Google Developer Expert (GDE)</strong> en
           la categoría de <strong>Tecnologías Web</strong>. Divulgador de contenido a través
           de YouTube (¡Ya somos más de 30,000 suscritos!)
         </p>
