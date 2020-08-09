@@ -54,10 +54,6 @@ module.exports = {
           {
             name: "YouTube",
             url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1"
-          },
-          {
-            name: "Twitch",
-            url: "https://twitch.tv/carlosazaustre"
           }
         ]
       }
