@@ -16,7 +16,7 @@ export default ({ link, text, width = '300px' }) => {
           margin: 1rem auto;
           padding: 1rem;
           color: #222;
-          background-color: #FFB934;
+          background-color: #FBCF65;
           border-radius: 10px;
           font-weight: 700;
           font-size: 1.5em;

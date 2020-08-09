@@ -19,12 +19,12 @@ export const Hero = ({
           Trabajando en empresas como <em> Google, IBM y Eventbrite</em>.
         </p>
         <p>
-          Reconocido por Google como <strong>Google Developer Expert (GDE)</strong> en
-          la categoría de <strong>Tecnologías Web</strong>. Divulgador de contenido a través
+          Soy <strong>Google Developer Expert (GDE)</strong> en
+          la categoría de <strong>Tecnologías Web</strong> y divulgador de contenido a través
           de YouTube (¡Ya somos más de 30,000 suscritos!)
         </p>
         <p>
-          Accede a mi <strong>curso gratuito para aprender a desarrollar un API REST con Node.js y Express</strong>
+          Te invito a ver mi <strong>curso GRATIS para aprender Node.js desde cero</strong> Desarrollando un API REST.
         </p>
         <ButtonCTA
           text="¡Quiero aprender JavaScript!"

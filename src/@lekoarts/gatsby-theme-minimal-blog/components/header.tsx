@@ -7,7 +7,7 @@ import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import ColorModeToggle from "./colormode-toggle"
 import Navigation from "./navigation"
 import replaceSlashes from "../utils/replaceSlashes"
-import logo from "../../../../static/favicon-32x32.png"
+import logo from "../../../../static/favicon-96x96.png"
 import ExternalLink from "../../../components/external-link"
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
           sx={{ color: `heading`, textDecoration: `none` }}
         >
           <div sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
-              <img src={logo} alt={siteTitle} />&nbsp; 
+              <img src={logo} width={32} alt={siteTitle} />&nbsp; 
               {siteTitle}
          </div>
         </Link>

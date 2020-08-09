@@ -42,7 +42,7 @@ module.exports = {
             slug: `/about`
           },
           {
-            title: `Videollamada`,
+            title: `Sesión 1 a 1`,
             slug: `/videollamada`
           }
         ],
@@ -54,10 +54,6 @@ module.exports = {
           {
             name: "YouTube",
             url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1"
-          },
-          {
-            name: "Twitch",
-            url: "https://twitch.tv/carlosazaustre"
           }
         ]
       }
@@ -97,8 +93,8 @@ module.exports = {
         short_name: `carlosazaustre.es`,
         description: `Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase.`,
         start_url: `/`,
-        background_color: `#FCCB0B`,
-        theme_color: `#FCCB0B`,
+        background_color: `#FBCF65`,
+        theme_color: `#FBCF65`,
         display: `standalone`,
         icons: [
           {

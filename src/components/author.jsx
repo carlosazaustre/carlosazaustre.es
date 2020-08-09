@@ -13,9 +13,9 @@ export default ({ showNewsletter = true }) => {
           justifyContent: `center`,
           marginBottom: `1.25em`,
           padding: `1.25em`,
-          backgroundColor: `#FFB934`,
+          backgroundColor: `rgba(190,190,190, 0.3)`,
           borderRadius: `10px`,
-          color: `#333`
+          // color: `#333`
         }}
       >
         <img
@@ -42,7 +42,7 @@ export default ({ showNewsletter = true }) => {
           </p>
           {
             showNewsletter && <NewsletterForm
-              title="📬 Únete y estate al día en desarrollo web"
+              title="📬 Únete y ponte al día en desarrollo web"
               text="Recibe puntualmente información sobre las últimas novedades en tecnologías
                     web y desarrollo web moderno para que estés siempre actualizadx:"
             />
