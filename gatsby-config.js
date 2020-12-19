@@ -49,7 +49,7 @@ module.exports = {
         externalLinks: [
           {
             name: "🎓 FullstackJS Academy",
-            url: "https://clases.fullstack.academy"
+            url: "https://clases.fullstackjs.academy"
           },
           {
             name: "YouTube",
