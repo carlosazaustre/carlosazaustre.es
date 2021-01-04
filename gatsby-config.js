@@ -7,11 +7,11 @@ const newsletterFeed = require('./src/@lekoarts/gatsby-theme-minimal-blog/utils/
 module.exports = {
   siteMetadata: {
     siteTitle: `carlosazaustre.es`,
-    siteTitleAlt: `carlosazaustre.es - Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
-    siteHeadline: `carlosazaustre.es - Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
+    siteTitleAlt: `Formación y Desarrollo en JavaScript: React, Node.js, Firebase`,
+    siteHeadline: `Formación y Desarrollo en JavaScript: React, Node.js, Firebase`,
     siteUrl: `https://carlosazaustre.es`,
     siteLanguage: `es`,
-    siteDescription: `Formación y Desarrollo en JavaScript: Node.js, React, Vue, Firebase`,
+    siteDescription: `Formación y Desarrollo en JavaScript: React, Node.js, Firebase`,
     siteImage: `/banner.jpg`,
     author: `@carlosazaustre`,
     social: {
@@ -42,14 +42,14 @@ module.exports = {
             slug: `/about`
           },
           {
-            title: `Sesión 1 a 1`,
+            title: `Videollamada 1 a 1`,
             slug: `/videollamada`
           }
         ],
         externalLinks: [
           {
             name: "🎓 FullstackJS Academy",
-            url: "https://fullstackjs.academy"
+            url: "https://clases.fullstackjs.academy"
           },
           {
             name: "YouTube",
