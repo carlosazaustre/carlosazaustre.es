@@ -67,10 +67,10 @@ export default ({
       {text}
     </p>
     <form
-      id="newsletter"
       style={styles.form}
-      action={`https://app.mailerlite.com/webforms/submit/${formId}`}
-      data-code={dataCode}
+      action="http://newsletter.carlosazaustre.es/add_subscriber"
+      id="revue-form" 
+      name="revue-form" 
       method="post"
       target="_blank"
     >
@@ -78,8 +78,10 @@ export default ({
         <input
           type="text"
           style={styles.input}
+          class="revue-form-field"
           data-inputmask=""
-          name="fields[name]"
+          name="member[first_name]"
+          id="member_first_name"
           placeholder="Tu Nombre..."
           autoComplete="name"
         />
@@ -87,16 +89,16 @@ export default ({
           type="email"
           style={styles.input}
           data-inputmask=""
-          name="fields[email]"
           placeholder="Tu Email..."
+          class="revue-form-field" 
+          name="member[email]"
+          id="member_email"
           autoComplete="email"
         />
       </div>
       <input type="hidden" name="ml-submit" value="1" />
       <div className="ml-form-embedSubmit">
-        <button type="submit" style={styles.button}>
-          {submitText}
-        </button>
+        <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
         <button
           disabled="disabled"
           style={{ display: "none" }}
@@ -119,25 +121,5 @@ export default ({
       </span>{" "}
       Libre de Spam. Sólo contenido que te interesa.
     </small>
-
-    <img
-      src={`https://track.mailerlite.com/webforms/o/${version}/${formId}?${hash}`}
-      width="1"
-      height="1"
-      style={{
-        maxWidth: "1px",
-        maxHeight: "1px",
-        visibility: "hidden",
-        padding: 0,
-        margin: 0,
-        display: "block"
-      }}
-      alt="."
-      border="0"
-    />
-    <script
-      src={`https://static.mailerlite.com/js/w/webforms.min.js?${hash}`}
-      type="text/javascript"
-    ></script>
   </div>
 );
