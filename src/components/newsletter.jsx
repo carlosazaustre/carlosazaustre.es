@@ -114,6 +114,7 @@ export default ({
           </div>{" "}
         </button>
       </div>
+          <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
     </form>
     <small style={{ display: "block", color: "#222", textAlign: "center", margin: "0 auto" }}>
       <span role="img" aria-label="secure">
