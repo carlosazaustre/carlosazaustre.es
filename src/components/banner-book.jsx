@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const styles = {
   wrapper: {
     backgroundColor: "#ffe47a",
     textAlign: "center",
-    padding: "0.75em 1em"
+    padding: "0.75em 1em",
   },
   link: {
     display: "block",
     width: "100%",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 };
 
 export default () => (

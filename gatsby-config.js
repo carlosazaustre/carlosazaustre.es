@@ -1,3 +1,9 @@
+'bnnjnk;
+
+
+\
+
+
 require(`dotenv`).config({
   path: `.env`,
 })
