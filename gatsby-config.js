@@ -1,14 +1,8 @@
-'bnnjnk;
-
-
-\
-
-
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const newsletterFeed = require('./src/@lekoarts/gatsby-theme-minimal-blog/utils/newsletterFeed')
+const newsletterFeed = require("./src/@lekoarts/gatsby-theme-minimal-blog/utils/newsletterFeed");
 
 module.exports = {
   siteMetadata: {
@@ -21,8 +15,8 @@ module.exports = {
     siteImage: `/banner.jpg`,
     author: `@carlosazaustre`,
     social: {
-      twitter: `carlosazaustre`
-    }
+      twitter: `carlosazaustre`,
+    },
   },
   plugins: [
     {
@@ -31,9 +25,9 @@ module.exports = {
         plugins: [
           {
             resolve: "gatsby-remark-external-links",
-          }
-        ]
-      }
+          },
+        ],
+      },
     },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
@@ -41,28 +35,28 @@ module.exports = {
         navigation: [
           {
             title: `Blog`,
-            slug: `/blog`
+            slug: `/blog`,
           },
           {
             title: `Sobre Mi`,
-            slug: `/about`
+            slug: `/about`,
           },
           {
             title: `Videollamada 1 a 1`,
-            slug: `/videollamada`
-          }
+            slug: `/videollamada`,
+          },
         ],
         externalLinks: [
           {
             name: "🎓 FullstackJS Academy",
-            url: "https://clases.fullstackjs.academy"
+            url: "https://clases.fullstackjs.academy",
           },
           {
             name: "YouTube",
-            url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1"
-          }
-        ]
-      }
+            url: "https://www.youtube.com/carlosazaustre?sub_confirmation=1",
+          },
+        ],
+      },
     },
     `gatsby-plugin-theme-ui`,
     {
@@ -72,24 +66,24 @@ module.exports = {
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
         enabled: (() =>
-          ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
-      }
+          ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
-      options: newsletterFeed
+      options: newsletterFeed,
     },
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `carlosazaustre`
-      }
+        shortname: `carlosazaustre`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID
-      }
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
     },
     `gatsby-plugin-sitemap`,
     {
@@ -107,19 +101,19 @@ module.exports = {
             src: `/android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
-            purpose: `maskable`
+            purpose: `maskable`,
           },
           {
             src: `/android-chrome-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
-            purpose: `maskable`
-          }
-        ]
-      }
+            purpose: `maskable`,
+          },
+        ],
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
-  ]
+  ],
 };
