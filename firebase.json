@@ -9,6 +9,11 @@
         "type": 301
       },
       {
+        "source": "/tienda",
+        "destination": "https://carlosazaustre.creator-spring.com/",
+        "type": 301
+      }
+      {
         "source": "/links",
         "destination": "https://shor.by/jLqS",
         "type": 301
