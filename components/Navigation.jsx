@@ -22,7 +22,7 @@ export const Navigation = () => {
           transition: all 0.2s ease;
         }
         .menu a:hover,
-        .menu a:active {
+        .active {
           background-color: var(--color-white);
           border-radius: 20px;
         }
@@ -42,28 +42,32 @@ export const Navigation = () => {
       <nav>
         <ul className="menu">
           <li>
-            <Link href="/" passHref>
-              <a>Home</a>
+            <Link href="/">
+              <a className={pathname === "/" ? "active" : ""}>Home</a>
             </Link>
           </li>
           <li>
-            <Link href="/blog" passHref>
-              <a>Blog</a>
+            <Link href="/blog">
+              <a className={pathname === "/blog" ? "active" : ""}>Blog</a>
             </Link>
           </li>
           <li>
             <Link href="/sobre-mi" passHref>
-              <a>Sobre Mi</a>
+              <a className={pathname === "/sobre-mi" ? "active" : ""}>
+                Sobre Mi
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/mentoria" passHref>
-              <a>Mentoría</a>
+              <a className={pathname === "/mentoria" ? "active" : ""}>
+                Mentoría
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/cursos" passHref>
-              <a>Cursos</a>
+              <a className={pathname === "/cursos" ? "active" : ""}>Cursos</a>
             </Link>
           </li>
         </ul>

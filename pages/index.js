@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 import { Header } from "../components/Header";
 import { Intro } from "../components/Intro";
@@ -17,7 +16,7 @@ export default function Home() {
 
         .main {
           margin: 0 auto;
-          height: 85vh;
+          /*height: 85vh; */
           padding: 2rem 4rem 0 4rem;
           display: flex;
           background-image: url("/assets/carlosazaustre-profile-image-large.png");

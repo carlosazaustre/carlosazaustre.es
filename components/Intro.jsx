@@ -16,7 +16,6 @@ export const Intro = () => {
           display: inline-block;
           font-weight: black;
         }
-
         .text {
           font-weight: normal;
           font-size: 1rem;
@@ -27,10 +26,13 @@ export const Intro = () => {
         <span className="subtitleName">Carlos Azaustre</span>
       </h2>
       <h3 className="text">
-        Llevo 10+ años trabajando en desarrollo web con JavaScript. He trabajado
-        en Google, IBM y Eventbrite. Soy Google Developer Expert (GDE) en la
-        categoría de Tecnologías Web y divulgador de contenido a través de
-        YouTube, dónde ya somos más de 50,000 suscritos!!
+        Desarrollador JavaScript con 10+ años de experiencia. Actualmente
+        formador y divulgador en tecnologías web a través de YouTube, dónde ya
+        somos más de 50,000!!.
+        <br />
+        <br />
+        Reconocido por Google como Developer Expert (GDE) en Web, y Auth0
+        Ambassador.
       </h3>
       <ButtonCTA
         text="¡Quiero aprender JavaScript!"
