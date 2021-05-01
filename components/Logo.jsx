@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Logo = ({}) => {
   return (
     <svg
@@ -10,17 +8,11 @@ export const Logo = ({}) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>Desarrollo JavaScript y Formación - Carlos Azaustre</title>
-      <g
-        id="BRAND"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fillRule="evenodd"
-      >
+      <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g
           id="Logos"
           transform="translate(-35.000000, -225.000000)"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <g id="Logo-Minimal" transform="translate(36.000000, 226.000000)">
             <path
