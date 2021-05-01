@@ -1,121 +1,116 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.hero {
+  background-color: var(--color-primary);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 4rem 4rem 1rem 4rem;
+  font-weight: bold;
+  margin: 0 auto;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  margin: 1em;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--color-black);
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+}
+.menu a:hover,
+.menu a:active {
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social li {
+  margin: 1em;
+  transition: all 0.2s ease;
+}
+.social li:hover {
+  fill: var(--color-white);
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  margin: 0 auto;
+  height: 85vh;
+  padding: 2rem 4rem 0 4rem;
+  display: flex;
+  background-image: url("/assets/carlosazaustre-profile-image-large.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.mainLeft {
+  width: 35%;
+  height: 100%;
+}
+
+.mainRight {
+  width: 65%;
+}
+
+.book {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.book img:hover {
+  margin-bottom: 10px;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subtitle {
+  font-size: 3rem;
+}
+.subtitleGreeting {
+  display: inline-block;
+  font-weight: 500;
+}
+.subtitleName {
+  display: inline-block;
+  font-weight: black;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.text {
+  font-weight: normal;
+  font-size: 1rem;
 }
 
-.title a {
-  color: #0070f3;
+.btnCTA {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-black);
   text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
+  font-weight: bold;
   font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 20px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.logos {
+  max-width: 400px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  flex-direction: column;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.logosRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0.5rem;
+  align-content: center;
 }
