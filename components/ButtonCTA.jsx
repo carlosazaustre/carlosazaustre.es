@@ -17,6 +17,8 @@ export const ButtonCTA = ({ text, url }) => {
           border-radius: var(--radius);
           border: 2px solid var(--color-white);
           transition: var(--animation);
+          max-width: 500px;
+          margin: 1.25rem auto;
         }
         .btnCTA:hover {
           color: var(--color-white);

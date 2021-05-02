@@ -9,40 +9,51 @@ export default function Home() {
     <div>
       <style jsx>{`
         .hero {
-          background: radial-gradient(
-            circle at 90% 20%,
-            var(--color-primary-dark)) 0%,
-            var(--color-primary-light) 31%,
-            var(--color-primary) 100%
-          );
           background-color: var(--color-primary);
-          border-radius: var(--radius);
-          overflow: hidden;
-          max-width: var(--screen-2xl);
-          margin: 0 auto;
         }
-
         .main {
-          margin: 0 auto;
-          display: flex;
-          background-image: url("/assets/carlosazaustre-profile-image-large.png");
-          background-repeat: no-repeat;
-          background-position: right bottom;
-          background-size: contain;
-        }
-        .mainLeft {
-          width: 35%;
-          height: 100%;
-          padding: 2rem 0 2.5rem 4rem;
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
-          background: url("/assets/ellipse-left.png") no-repeat bottom left;
         }
-        .mainRight {
-          width: 65%;
+        .main-left {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem 0 0rem 2rem;
+        }
+        .main-right {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
 
-          background: url("/assets/ellipse-right.png") no-repeat top right;
+        @media screen and (min-width: 1024px) {
+          .hero {
+            border-radius: var(--radius);
+            overflow: hidden;
+            max-width: var(--screen-2xl);
+            margin: 0 auto;
+          }
+          .main {
+            margin: 0 auto;
+            flex-direction: row;
+            background-image: url("/assets/carlosazaustre-profile-image-large.png");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
+          }
+          .main-left {
+            width: 35%;
+            height: 100%;
+            padding: 2rem 0 2.5rem 4rem;
+            justify-content: flex-end;
+            background: url("/assets/ellipse-left.png") no-repeat bottom left;
+          }
+          .main-right {
+            width: 65%;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
         }
       `}</style>
       <Head>
@@ -57,10 +68,10 @@ export default function Home() {
       <div className="hero">
         <Header />
         <main role="main" className="main">
-          <section className="mainLeft">
+          <section className="main-left">
             <Intro />
           </section>
-          <section className="mainRight">
+          <section className="main-right">
             <Book
               imageSrc="/assets/aprendiendo-javascript-libro.png"
               url="https://www.amazon.com/-/es/Carlos-Azaustre/dp/B08TZ3HSYZ/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1619807979&sr=8-1"

@@ -8,7 +8,8 @@ export const Intro = () => {
         .subtitle {
           font-size: 3rem;
           line-height: 1.1em;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
+          text-align: center;
         }
         .subtitleGreeting {
           display: inline-block;
@@ -19,8 +20,19 @@ export const Intro = () => {
           font-weight: black;
         }
         .text {
+          text-align: center;
           font-weight: normal;
-          font-size: 1rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+          .subtitle {
+            margin-bottom: 2rem;
+            text-align: left;
+          }
+          .text {
+            font-size: 1rem;
+            text-align: left;
+          }
         }
       `}</style>
       <h2 className="subtitle">

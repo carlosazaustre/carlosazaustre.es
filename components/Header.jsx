@@ -7,11 +7,22 @@ export const Header = () => {
       <style jsx>{`
         .header {
           display: flex;
-          padding: 4rem 4rem 1rem 4rem;
+          flex-direction: column;
+          padding: 1rem;
           font-weight: bold;
           margin: 0 auto;
           align-items: center;
           justify-content: space-between;
+        }
+        @media screen and (min-width: 1024px) {
+          .header {
+            flex-direction: row;
+            padding: 4rem 4rem 1rem 4rem;
+            font-weight: bold;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+          }
         }
       `}</style>
       <header role="header" className="header">

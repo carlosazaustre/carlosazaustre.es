@@ -10,11 +10,13 @@ export const Navigation = () => {
     <>
       <style jsx>{`
         .menu {
+          font-size: 0.9rem;
           display: flex;
-          font-size: 1.25rem;
+          flex-direction: row;
+          margin: 1.2rem 0;
         }
         .menu li {
-          margin: 1em;
+          margin: 0.25rem;
         }
         .menu a {
           text-decoration: none;
@@ -27,17 +29,31 @@ export const Navigation = () => {
           background-color: var(--color-white);
           border-radius: 20px;
         }
-
         .social {
           display: flex;
-          justify-content: space-between;
+          width: 30%;
+          flex-direction: row;
+          justify-content: space-around;
         }
-        .social li {
-          margin: 1em;
-          transition: all 0.2s ease;
-        }
-        .social li:hover {
-          fill: var(--color-white);
+
+        @media screen and (min-width: 1024px) {
+          .menu {
+            font-size: 1.25rem;
+          }
+          .menu li {
+            margin: 1rem;
+          }
+
+          .social {
+            width: 10%;
+          }
+          .social li {
+            margin: 1em;
+            transition: var(--animation);
+          }
+          .social li:hover {
+            fill: var(--color-white);
+          }
         }
       `}</style>
       <nav>

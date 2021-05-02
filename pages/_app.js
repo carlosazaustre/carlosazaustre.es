@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
           --color-bg-gray: #e5e5e5;
           --color-primary: #fbcf65;
           --color-primary-light: #fde68a;
-          --color-primary-dark: #ffb800;
+          --color-primary-dark: #ffb500;
           --color-black: #222;
           --color-dark: #323232;
           --color-white: #fff;
