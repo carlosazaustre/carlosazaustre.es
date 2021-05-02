@@ -9,32 +9,40 @@ export default function Home() {
     <div>
       <style jsx>{`
         .hero {
+          background: radial-gradient(
+            circle at 90% 20%,
+            var(--color-primary-dark)) 0%,
+            var(--color-primary-light) 31%,
+            var(--color-primary) 100%
+          );
           background-color: var(--color-primary);
-          max-width: 1440px;
+          border-radius: var(--radius);
+          overflow: hidden;
+          max-width: var(--screen-2xl);
           margin: 0 auto;
         }
 
         .main {
           margin: 0 auto;
-          /*height: 85vh; */
-          padding: 2rem 4rem 0 4rem;
           display: flex;
           background-image: url("/assets/carlosazaustre-profile-image-large.png");
           background-repeat: no-repeat;
           background-position: right bottom;
           background-size: contain;
         }
-
         .mainLeft {
           width: 35%;
           height: 100%;
+          padding: 2rem 0 2.5rem 4rem;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-end;
+          background: url("/assets/ellipse-left.png") no-repeat bottom left;
         }
-
         .mainRight {
           width: 65%;
+
+          background: url("/assets/ellipse-right.png") no-repeat top right;
         }
       `}</style>
       <Head>
@@ -48,7 +56,6 @@ export default function Home() {
 
       <div className="hero">
         <Header />
-
         <main role="main" className="main">
           <section className="mainLeft">
             <Intro />

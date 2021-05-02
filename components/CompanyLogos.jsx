@@ -5,15 +5,17 @@ export const CompanyLogos = () => {
     <div className="logos">
       <style jsx>{`
         .logos {
-          max-width: 400px;
+          max-width: 500px;
+          text-align: center;
           display: flex;
           flex-direction: column;
         }
         .logosRow {
           display: flex;
           flex-direction: row;
+          text-align: center;
           justify-content: space-around;
-          margin: 0.5rem;
+          padding: 1rem;
           align-content: center;
         }
       `}</style>

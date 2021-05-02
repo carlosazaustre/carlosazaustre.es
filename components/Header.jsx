@@ -15,7 +15,10 @@ export const Header = () => {
         }
       `}</style>
       <header role="header" className="header">
-        <h1 className="logo">
+        <h1
+          className="logo"
+          title="Formador y Desarrollador Web JavaScript Fullstack - Carlos Azaustre"
+        >
           <Logo />
         </h1>
         <Navigation />

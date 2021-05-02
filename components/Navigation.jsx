@@ -4,6 +4,7 @@ import { YouTube, Twitch } from "./Icons";
 
 export const Navigation = () => {
   const { pathname } = useRouter();
+  const isActiveLink = (path) => (pathname === path ? "active" : "");
 
   return (
     <>
@@ -42,32 +43,23 @@ export const Navigation = () => {
       <nav>
         <ul className="menu">
           <li>
-            <Link href="/">
-              <a className={pathname === "/" ? "active" : ""}>Home</a>
-            </Link>
-          </li>
-          <li>
             <Link href="/blog">
-              <a className={pathname === "/blog" ? "active" : ""}>Blog</a>
+              <a className={isActiveLink("/")}>Blog</a>
             </Link>
           </li>
           <li>
             <Link href="/sobre-mi" passHref>
-              <a className={pathname === "/sobre-mi" ? "active" : ""}>
-                Sobre Mi
-              </a>
+              <a className={isActiveLink("/sobre-mi")}>Sobre Mi</a>
             </Link>
           </li>
           <li>
             <Link href="/mentoria" passHref>
-              <a className={pathname === "/mentoria" ? "active" : ""}>
-                Mentoría
-              </a>
+              <a className={isActiveLink("/mentoria")}>Mentoría</a>
             </Link>
           </li>
           <li>
             <Link href="/cursos" passHref>
-              <a className={pathname === "/cursos" ? "active" : ""}>Cursos</a>
+              <a className={isActiveLink("/cursos")}>Cursos</a>
             </Link>
           </li>
         </ul>

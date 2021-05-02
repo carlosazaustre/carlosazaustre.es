@@ -7,6 +7,8 @@ export const Intro = () => {
       <style jsx>{`
         .subtitle {
           font-size: 3rem;
+          line-height: 1.1em;
+          margin-bottom: 2rem;
         }
         .subtitleGreeting {
           display: inline-block;
@@ -28,7 +30,7 @@ export const Intro = () => {
       <h3 className="text">
         Desarrollador JavaScript con 10+ años de experiencia. Actualmente
         formador y divulgador en tecnologías web a través de YouTube, dónde ya
-        somos más de 50,000!!.
+        somos más de 50,000!
         <br />
         <br />
         Reconocido por Google como Developer Expert (GDE) en Web, y Auth0

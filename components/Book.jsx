@@ -12,7 +12,7 @@ export const Book = ({ imageSrc, url }) => {
           height: 100%;
           position: relative;
           top: 10px;
-          transition: all 0.3s ease;
+          transition: var(--animation);
         }
         .book:hover {
           top: 0px;
