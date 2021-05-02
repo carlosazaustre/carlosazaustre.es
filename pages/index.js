@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Intro } from "../components/Intro";
 import { Book } from "../components/Book";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
@@ -29,10 +30,8 @@ export default function Home() {
 
         @media screen and (min-width: 1024px) {
           .hero {
-            border-radius: var(--radius);
             overflow: hidden;
-            max-width: 1440px;
-            margin: 0 auto;
+            max-width: var(--max-width);
           }
           .main {
             margin: 0 auto;
@@ -53,6 +52,12 @@ export default function Home() {
             width: 65%;
             flex-direction: row;
             justify-content: flex-start;
+          }
+        }
+        @media screen and (min-width: 1440px) {
+          .hero {
+            border-radius: var(--radius);
+            margin: 0 auto;
           }
         }
       `}</style>
@@ -79,6 +84,7 @@ export default function Home() {
           </section>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

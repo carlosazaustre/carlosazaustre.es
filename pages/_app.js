@@ -17,16 +17,7 @@ function MyApp({ Component, pageProps }) {
           --animation: all 0.3s ease;
           --heading-1-size: 3rem;
           --heading-2-size: 1.5rem;
-        }
-
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: var(--primary-font), sans-serif;
-          font-size: 16px;
-          color: var(--color-black);
-          background-color: var(--color-bg-gray);
+          --max-width: 1440px;
         }
 
         * {
@@ -34,6 +25,14 @@ function MyApp({ Component, pageProps }) {
           padding: 0;
           list-style: none;
           box-sizing: border-box;
+          text-decoration: none;
+        }
+        html,
+        body {
+          font-family: var(--primary-font), sans-serif;
+          font-size: 16px;
+          color: var(--color-black);
+          background-color: var(--color-bg-gray);
         }
       `}</style>
       <Component {...pageProps} />

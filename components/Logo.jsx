@@ -1,4 +1,4 @@
-export const Logo = ({}) => {
+export const Logo = ({ type = "minimal" }) => {
   return (
     <svg
       width="51px"
