@@ -18,7 +18,7 @@ export default function Home() {
         .main-left {
           display: flex;
           flex-direction: column;
-          padding: 2rem 0 0rem 2rem;
+          padding: 0 0 1.5rem 1.5rem;
         }
         .main-right {
           width: 100%;
@@ -31,7 +31,7 @@ export default function Home() {
           .hero {
             border-radius: var(--radius);
             overflow: hidden;
-            max-width: var(--screen-2xl);
+            max-width: 1440px;
             margin: 0 auto;
           }
           .main {
@@ -45,7 +45,7 @@ export default function Home() {
           .main-left {
             width: 35%;
             height: 100%;
-            padding: 2rem 0 2.5rem 4rem;
+            padding: 0 0 4rem 4rem;
             justify-content: flex-end;
             background: url("/assets/ellipse-left.png") no-repeat bottom left;
           }

@@ -6,7 +6,7 @@ export const Intro = () => {
     <>
       <style jsx>{`
         .subtitle {
-          font-size: 3rem;
+          font-size: var(--heading-1-size);
           line-height: 1.1em;
           margin-bottom: 1rem;
           text-align: center;

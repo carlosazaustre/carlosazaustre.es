@@ -8,7 +8,7 @@ export const Header = () => {
         .header {
           display: flex;
           flex-direction: column;
-          padding: 1rem;
+          padding: 2rem;
           font-weight: bold;
           margin: 0 auto;
           align-items: center;
@@ -17,9 +17,8 @@ export const Header = () => {
         @media screen and (min-width: 1024px) {
           .header {
             flex-direction: row;
-            padding: 4rem 4rem 1rem 4rem;
+            padding: 4rem;
             font-weight: bold;
-            margin: 0 auto;
             align-items: center;
             justify-content: space-between;
           }

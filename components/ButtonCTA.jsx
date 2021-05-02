@@ -11,7 +11,7 @@ export const ButtonCTA = ({ text, url }) => {
           text-decoration: none;
           text-align: center;
           font-weight: bold;
-          font-size: 1.5rem;
+          font-size: var(--heading-2-size);
           padding: 1rem 2rem;
           margin: 1rem 0;
           border-radius: var(--radius);

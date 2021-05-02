@@ -13,10 +13,10 @@ export const Navigation = () => {
           font-size: 0.9rem;
           display: flex;
           flex-direction: row;
-          margin: 1.2rem 0;
+          margin: 1.5rem;
         }
         .menu li {
-          margin: 0.25rem;
+          margin: 0 0.25rem;
         }
         .menu a {
           text-decoration: none;
@@ -38,17 +38,18 @@ export const Navigation = () => {
 
         @media screen and (min-width: 1024px) {
           .menu {
-            font-size: 1.25rem;
+            font-size: var(--heading-2-size);
+            margin: 0;
           }
           .menu li {
-            margin: 1rem;
+            margin: 0 1rem;
           }
 
           .social {
             width: 10%;
           }
           .social li {
-            margin: 1em;
+            margin: 0 1em;
             transition: var(--animation);
           }
           .social li:hover {

@@ -5,10 +5,6 @@ export const CompanyLogos = () => {
     <>
       <style jsx>{`
         .logos {
-          max-width: 500px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
           margin: 1rem auto;
         }
       `}</style>

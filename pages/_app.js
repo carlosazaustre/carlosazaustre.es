@@ -15,11 +15,8 @@ function MyApp({ Component, pageProps }) {
           --primary-font: "Poppins";
           --radius: 20px;
           --animation: all 0.3s ease;
-          --screen-sm: 640px;
-          --screen-md: 768px;
-          --screen-lg: 1024px;
-          --screen-xl: 1280px;
-          --screen-2xl: 1536px;
+          --heading-1-size: 3rem;
+          --heading-2-size: 1.5rem;
         }
 
         html,
@@ -27,6 +24,7 @@ function MyApp({ Component, pageProps }) {
           padding: 0;
           margin: 0;
           font-family: var(--primary-font), sans-serif;
+          font-size: 16px;
           color: var(--color-black);
           background-color: var(--color-bg-gray);
         }
