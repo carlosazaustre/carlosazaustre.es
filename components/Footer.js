@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { YouTube, Twitch, Instagram, TikTok, Twitter } from "./icons";
+import { IconYouTube } from "./IconYouTube";
+import { IconTwitch } from "./IconTwitch";
+import { IconInstagram } from "./IconInstagram";
+import { IconTikTok } from "./IconTikTok";
+import { IconTwitter } from "./IconTwitter";
 
 export const Footer = () => {
   return (
@@ -46,7 +50,7 @@ export const Footer = () => {
             justify-content: flex-start;
           }
         }
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1441px) {
           .footer {
             margin: 1rem auto;
             border-radius: var(--radius);
@@ -60,27 +64,27 @@ export const Footer = () => {
         <section className="footer-section social">
           <Link href="https://youtube.com/carlosazaustre?sub_confirmation=1">
             <a>
-              <YouTube size="40px" />
+              <IconYouTube size="40px" />
             </a>
           </Link>
           <Link href="https://twitch.tv/carlosazaustre">
             <a>
-              <Twitch size="40px" />
+              <IconTwitch size="40px" />
             </a>
           </Link>
           <Link href="https://instagram.com/carlosazaustre">
             <a>
-              <Instagram size="40px" />
+              <IconInstagram size="40px" />
             </a>
           </Link>
           <Link href="https://tiktok.com/@carlosazaustre">
             <a>
-              <TikTok size="40px" />
+              <IconTikTok size="40px" />
             </a>
           </Link>
           <Link href="https://twitter.com/carlosazaustre">
             <a>
-              <Twitter size="40px" />
+              <IconTwitter size="40px" />
             </a>
           </Link>
         </section>

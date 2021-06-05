@@ -1,4 +1,4 @@
-export const Instagram = ({ size = "50px" }) => {
+export const IconInstagram = ({ size = "50px" }) => {
   return (
     <svg
       width={size}

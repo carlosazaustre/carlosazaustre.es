@@ -1,4 +1,4 @@
-export const YouTube = ({ size = "50px" }) => {
+export const IconYouTube = ({ size = "50px" }) => {
   return (
     <svg
       width={size}

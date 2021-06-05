@@ -35,6 +35,7 @@ export default function Home() {
           }
           .main {
             margin: 0 auto;
+            height: 80vh;
             flex-direction: row;
             background-image: url("/assets/carlosazaustre-profile-image-large.png");
             background-repeat: no-repeat;
@@ -54,7 +55,7 @@ export default function Home() {
             justify-content: flex-start;
           }
         }
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1441px) {
           .hero {
             border-radius: var(--radius);
             margin: 0 auto;

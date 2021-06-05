@@ -1,4 +1,4 @@
-export const Twitch = ({ size = "50px" }) => {
+export const IconTwitch = ({ size = "50px" }) => {
   return (
     <svg
       width={size}

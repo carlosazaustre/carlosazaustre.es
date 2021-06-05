@@ -1,4 +1,4 @@
-export const TikTok = ({ size = "50px" }) => {
+export const IconTikTok = ({ size = "50px" }) => {
   return (
     <svg
       width={size}

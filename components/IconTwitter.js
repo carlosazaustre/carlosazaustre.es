@@ -1,4 +1,4 @@
-export const Twitter = ({ size = "50px" }) => {
+export const IconTwitter = ({ size = "50px" }) => {
   return (
     <svg
       width={size}

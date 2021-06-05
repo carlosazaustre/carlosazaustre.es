@@ -35,6 +35,7 @@ export const Intro = () => {
           }
         }
       `}</style>
+
       <h2 className="subtitle">
         <span className="subtitleGreeting">Hola 👋🏼, soy</span>{" "}
         <span className="subtitleName">Carlos Azaustre</span>

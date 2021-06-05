@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { YouTube, Twitch } from "./Icons";
+import { IconYouTube } from "./IconYouTube";
+import { IconTwitch } from "./IconTwitch";
 
 export const Navigation = () => {
   const { pathname } = useRouter();
@@ -85,14 +86,14 @@ export const Navigation = () => {
         <li>
           <Link href="//youtube.com/c/CarlosAzaustre?sub_confirmation=1">
             <a>
-              <YouTube size="30px" />
+              <IconYouTube size="30px" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="//twitch.tv/carlosazaustre">
             <a>
-              <Twitch size="30px" />
+              <IconTwitch size="30px" />
             </a>
           </Link>
         </li>
